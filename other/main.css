@@ -1,0 +1,99 @@
+@font-face {
+	font-family: badaboom;
+	src: url('/fonts/badaboom.ttf');
+}
+
+@font-face {
+	font-family: cat;
+	src: url('/fonts/DK The Cats Whiskers.otf');
+}
+
+@font-face {
+	font-family: antipasto;
+	src: url('/fonts/antipasto.otf');
+}
+
+@font-face {
+	font-family: avengers;
+	src: url('/fonts/avengers.ttf');
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-size: 16px;
+}
+
+/*
+	PROGRESS BAR
+*/
+
+/*
+	BASIC SETUP
+*/
+
+.content {
+	width: 100%;
+	height: 100%;
+	min-height: 450px;
+	position: absolute;
+	top: 0px;
+	-webkit-transition: left 0.7s ease-in-out;
+	-moz-transition: left 0.7s ease-in-out;
+	transition: left 0.7s ease-in-out;
+}
+
+.content.introBody {
+	background-color: rgba(135, 45, 45, 1);
+}
+
+.content.eventsBody {
+
+	background-image: url(images/events.png);
+	background-size: 100% 100%;
+}
+.content.active {
+	left: 0px;
+	z-index: 8;
+}
+
+.content.inactive {
+	left: 120%;
+	z-index: 5;
+}
+
+.content.transition {
+	z-index: 1;
+	left: -100%;
+}
+
+.warning {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 13, 26, 1);
+	position: fixed;
+	top: 0px;
+	display: none;
+}
+
+/*
+	NAV BAR
+*/
+
+/*
+	GALLERY BODY
+*/

@@ -1,0 +1,472 @@
+@font-face {
+	font-family: badaboom;
+	src: url('/fonts/badaboom.ttf');
+}
+
+@font-face {
+	font-family: cat;
+	src: url('/fonts/DK The Cats Whiskers.otf');
+}
+
+@font-face {
+	font-family: antipasto;
+	src: url('/fonts/antipasto.otf');
+}
+
+@font-face {
+	font-family: avengers;
+	src: url('/fonts/avengers.ttf');
+}
+
+* {
+	padding: 0px;
+	margin: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+html {
+	width: 100%;
+	height: 100%;
+}
+
+body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+	font-size: 16px;
+}
+
+/*
+	PROGRESS BAR
+*/
+
+.progress {
+	width: 100%;
+	height: 100%;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 100;
+	background-image: url('https://s3.ap-south-1.amazonaws.com/hillffair2016/images/backProgress.png');
+	background-size: 100% 100%;
+	text-align: center;
+}
+
+.progressContent {
+	width: 100%;
+	padding: 20px 0px 22% 0px;
+	position: absolute;
+	top: 0px;
+	text-align: center;
+	background-image: url('https://s3.ap-south-1.amazonaws.com/hillffair2016/images/burst.png');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: 50% 50%;
+	font-family: antipasto;
+	opacity: 1;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.progressContent.initial {
+	opacity: 0;
+}
+
+.progressNit {
+	font-size: 2em;
+	margin-bottom: -0.5em;
+	position: relative;
+	top: 0px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.progressHamir {
+	color: red;
+}
+
+.progressLogo img {
+	width: 100%;
+}
+
+.progressLogo {
+	width: 15%;
+	display: inline-block;
+	margin-top: 10px;
+	position: relative;
+	top: 0px;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.progressNit.initial {
+	top: -500px;
+}
+
+.progressHillffair.initial {
+	top: -500px;
+}
+
+.progressLogo.initial {
+	top: -500px;
+}
+
+.progressAnimation {
+	position: absolute;
+	width: 100%;
+	text-align: center;
+}
+
+.progressAnimation img {
+	width: 12%;
+}
+
+.progressAnimation.notJumping {
+	bottom: -2%;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.progressAnimation.jumping {
+	bottom: 15%;
+	-webkit-transition: all 2s;
+	-moz-transition: all 2s;
+	transition: all 2s;
+}
+
+.progressText {
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+}
+
+.loadingText {
+	padding: 5px 50px;
+	background-color: rgba(255, 255, 51, 0.8);
+	color: rgb(135, 45, 45);
+	font-family: cat;
+	font-size: 1.5em;
+	display: inline-block;
+	border: 2px solid rgb(135, 45, 45);
+	box-shadow: 3px 3px 2px 2px rgba(0, 0, 0, 0.6);
+}
+
+.progressText.jumping {
+	bottom: 10px;
+	-webkit-transition: all 1.0s;
+	-moz-transition: all 1.0s;
+	transition: all 1.0s;
+}
+
+.progressText.notJumping {
+	bottom: -100px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+@media (max-width: 750px) {
+	.progressNit {
+		font-size: 1em;
+		margin-bottom: 0px;
+	}
+
+	.progressAnimation.jumping {
+		bottom: 25%;
+	}
+
+	.progressContent {
+		padding: 10px 0px 130px 0px;
+	}
+
+	.progressLogo {
+		width: 15%;
+	}
+
+	.progressAnimation img {
+		width: 30%;
+	}
+
+}
+
+@media (max-width: 1000px) and (min-width: 751px) {
+	.progressLogo {
+		width: 15%;
+	}
+
+	.nit {
+		font-size: 1em;
+	}
+
+	.progressContent {
+		padding: 10px 0px 200px 0px;
+	}
+}
+
+/*
+	BASIC SETUP
+*/
+
+.content {
+	width: 100%;
+	height: 100%;
+	min-height: 450px;
+	position: absolute;
+	top: 0px;
+	-webkit-transition: left 0.7s ease-in-out;
+	-moz-transition: left 0.7s ease-in-out;
+	transition: left 0.7s ease-in-out;
+}
+
+.content.introBody {
+	background-color: rgba(135, 45, 45, 1);
+}
+
+.content.eventsBody {
+
+	background-image: url('events.png');
+	background-size: 100% 100%;
+}
+.content.active {
+	left: 0px;
+	z-index: 8;
+}
+
+.content.inactive {
+	left: 120%;
+	z-index: 5;
+}
+
+.content.transition {
+	z-index: 1;
+	left: -100%;
+}
+
+.warning {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 13, 26, 1);
+	position: fixed;
+	top: 0px;
+	display: none;
+}
+
+/*
+	NAV BAR
+*/
+
+.navIcon {
+	width: 40px;
+	position: fixed;
+	top: 30px;
+	right: 40px;
+	z-index: 20;
+	cursor: pointer;
+}
+
+.navIcon .line {
+	width: 100%;
+	height: 5px;
+	background-color: #ffffff;
+	margin-bottom: 5px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	position: relative;
+}
+
+.navIcon.notClicked .line {
+	-webkit-transform-origin: 0px 50%;
+	-moz-transform-origin: 0px 50%;
+	transform-origin: 0px 50%;
+}
+
+.navIcon.notClicked:hover .line1 {
+	width: 70%;
+}
+
+.navIcon.notClicked:hover .line3 {
+	width: 70%;
+}
+
+.navIcon.clicked {
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.navIcon.clicked .line1 {
+	top: 10px;
+	-webkit-transform: rotateZ(-45deg);
+	-moz-transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg);
+}
+
+.navIcon.clicked .line2 {
+	opacity: 0;
+}
+
+.navIcon.clicked .line3 {
+	top: -10px;
+	-webkit-transform: rotateZ(45deg);
+	-moz-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+}
+
+.menu {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	position: fixed;
+	left: 0px;
+	z-index: 20;
+	padding-top: 15%;
+}
+
+.menu.invisible {
+	left: -100%;
+}
+
+.menu.visible {
+	left: 0px;
+}
+
+.menuItem {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.menuItem svg {
+	width: 50%;
+}
+
+.menuItemImg {
+	position: relative;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.menuItemImg.notinview {
+	top: -1000px;
+}
+
+.menuItemImg.inview {
+	top: 0px;
+}
+
+.menuItemName {
+	position: relative;
+	color: white;
+	font-family: badaboom;
+	padding: 20px;
+	font-size: 2em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.menuItemName.notinview {
+	bottom: -800px;
+}
+
+.menuItemName.inview {
+	bottom: 0px;
+}
+
+.menuItemRegister {
+	width: 100%;
+	font-size: 2em;
+	padding: 20px;
+	display: none;
+	font-family: badaboom;
+	position: relative;
+	text-decoration: center;
+	color: white;
+	bottom: -800px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.menuItemNameRegister {
+	width: 100%;
+	text-align: center;
+}
+
+.menuItemRegister.inview {
+	bottom: 0px;
+}
+
+.menuItemRegister a {
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+.registerLinkMenu {
+	display: none;
+}
+
+/*
+	GALLERY BODY
+*/
+
+.galleryBody .left {
+	width: 30%;
+	height: 100%;
+	position: absolute;
+	left: 0px;
+	padding-top: 15%;
+	text-align: center;
+	-webkit-transition: background-color 0.3s;
+	-moz-transition: background-color 0.3s;
+	transition: background-color 0.3s;
+}
+
+
+.galleryBody .left.invisible {
+
+}
+
+.galleryBody .left.visible{
+
+}
+
+.galleryBody .left svg {
+	width: 60%;
+}
+
+.galleryBody .right {
+	position: absolute;
+	width: 70%;
+	left: 30%;
+	height: 100%;
+	text-align: center;
+	color: white;
+	padding: 20px;
+}
+
+.galleryBody .right .title {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.galleryBody .right .title.invisible {
+	position: relative;
+	top: -200px;
+}
+
+.galleryBody .right .title.visible {
+	top: 0px;
+}

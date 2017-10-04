@@ -1,0 +1,11 @@
+/*ANIMATIONS CSS*/
+
+/*SUBNAV*/
+@keyframes rolloverSubNav {
+    from {
+    	border:1px solid white;      
+    }
+    to {
+		border:6px solid white; 
+    }
+}

@@ -1,0 +1,870 @@
+/*
+	INTRO BODY 
+*/
+
+.introBody.transition .helper {
+	display: none;
+}
+
+.introBody.inactive .helper {
+	display: none;
+}
+
+.introBody .helper {
+	width: 1px;
+	height: 550%;
+}
+
+.intro {
+	background-image: url('https://s3.ap-south-1.amazonaws.com/hillffair2016/images/backmain.png');
+	width: 100%;
+	height: 100%;
+	background-size: 100% 100%;
+	top: 0px;
+	left: 0px;
+}
+
+.fixedIntro {
+	position: fixed;
+}
+
+.absoluteIntro {
+	position: absolute;
+	height: 100%;
+	overflow: hidden;
+}
+
+.scrollNotice {
+	font-family: badaboom;
+	position: absolute;
+	font-size: 1.7em;
+	text-align: center;
+	width: 100%;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.scrollNotice.default {
+	bottom: 20px;
+}
+
+.scrollNotice.jump {
+	bottom: 40px;
+}
+
+.avengers img {
+	width: 100%;
+	position: relative;
+}	
+
+.avengers {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.mainHulk {
+	width: 50%;
+	position: absolute;
+	bottom: -2%;
+	left: 25%;
+}
+
+.mainThor {
+	width: 12%;
+	position: absolute;
+	bottom: -4%;
+	left: 28%;
+}
+
+.mainBlackWidow {
+	position: absolute;
+	bottom: -3%;
+	left: 37%;
+	width: 12%;
+}
+
+.mainCaptainAmerica {
+	width: 12%;
+	position: absolute;
+	bottom: -1%;
+	left: 46%;
+}
+
+.mainHawkEye {
+	width: 12%;
+	position: absolute;
+	bottom: -2%;
+	left: 55%;
+}
+
+.mainIronman {
+	width: 12%;
+	position: absolute;
+	bottom: -5%;
+	left: 64%;
+}
+
+.mainSpiderman {
+	width: 10%;
+	position: absolute;
+	top: 0px;
+	left: 5%;
+}
+
+.movingSpiderman {
+	position: absolute;
+	-webkit-transition: all 3s;
+	-moz-transition: all 3s;
+	transition: all 3s;
+}
+
+.mainWeb {
+	width: 2px;
+	position: absolute;
+	left: 48%;
+	height: 350px;
+	top: -250px;
+	background-color: white;
+}
+
+.movingSpiderman.default {
+	top: -500px;
+}
+
+.movingSpiderman.final {
+	top: 150px;
+}
+
+.mainNickFury {
+	width: 200px;
+	position: absolute;
+	top: 50%;
+}
+
+.mainNickFury.default {
+	right: -250px;
+	-webkit-transition: all 0.5s;
+	-moz-transition: all 0.5s;
+	transition: all 0.5s;
+}
+
+.mainNickFury.final {
+	right: -50px;
+	-webkit-transition: all 3s;
+	-moz-transition: all 3s;
+	transition: all 3s;
+}
+
+.avengers.notUnited {
+	bottom: -100%;
+}
+
+.front {
+	width: 100%;
+	height: 100%;
+}
+
+.mainText {
+	text-align: center;
+	//color: #9f80ff;
+	color: #c4b3ff;
+	position: absolute;
+	top: 5%;
+	width: 100%;
+}
+
+.nit {
+	position: relative;
+	display: inline-block;
+	font-size: 2em;
+	font-family: badaboom;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	top: 0px;
+}
+
+.hillffair {
+	position: relative;
+	font-family: avengers;
+	font-size: 6em;
+	margin-top: 30px;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	top: 0px;
+}
+
+.date {
+	font-family: avengers;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+	margin-top: 40px;
+}
+
+.theme {
+	font-family: avengers;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+	margin-top: 40px;
+}
+
+.tagline {
+	font-family: avengers;
+	text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.8);
+	margin-top: 40px;
+}
+
+.frontLayer {
+
+}
+
+.restOfLanding {
+	width: 100%;
+	height: 100%;
+	//background-image: url('https://s3.ap-south-1.amazonaws.com/hillffair2016/images/backabout2.jpg');
+	//background-size: 100% 100%;
+	position: fixed;
+	background: rgb(135, 206, 235);
+}
+
+.landingCity {
+	width: 100%;
+	position: absolute;
+	bottom: -10px;
+	z-index: 1;
+}
+
+.landingCity img {
+	width: 100%;
+}
+
+.sky {
+	position: absolute;
+}
+
+.sky1 {
+	top: 10%;
+	width: 20%;
+	-webkit-animation: moveSky1 20s linear infinite;
+	-moz-animation: moveSky1 20s linear infinite;
+	-ms-animation: moveSky1 20s linear infinite;
+	-o-animation: moveSky1 20s linear infinite;
+	animation: moveSky1 20s linear infinite;
+}
+
+.sky2 {
+	top: 50%;
+	width: 8%;
+	-webkit-animation: moveSky2 40s linear infinite;
+	-moz-animation: moveSky2 40s linear infinite;
+	-ms-animation: moveSky2 40s linear infinite;
+	-o-animation: moveSky2 40s linear infinite;
+	animation: moveSky2 40s linear infinite;
+}
+
+.sky3 {
+	top: 30%;
+	width: 10%;
+	-webkit-animation: moveSky3 30s linear infinite;
+	-moz-animation: moveSky3 30s linear infinite;
+	-ms-animation: moveSky3 30s linear infinite;
+	-o-animation: moveSky3 30s linear infinite;
+	animation: moveSky3 30s linear infinite;
+}
+
+.sky4 {
+	width: 10%;
+	top: 5%;
+	-webkit-animation: moveSky4 50s linear infinite;
+	-moz-animation: moveSky4 50s linear infinite;
+	-ms-animation: moveSky4 50s linear infinite;
+	-o-animation: moveSky4 50s linear infinite;
+	animation: moveSky4 50s linear infinite;
+}
+
+.sky5 {
+	width: 5%;
+	top: 20%;
+	-webkit-animation: moveSky5 70s linear infinite;
+	-moz-animation: moveSky5 70s linear infinite;
+	-ms-animation: moveSky5 70s linear infinite;
+	-o-animation: moveSky5 70s linear infinite;
+	animation: moveSky5 70s linear infinite;
+}
+
+.sky6 {
+	top: 70%;
+	z-index: 2;
+	width: 10%;
+	-webkit-animation: moveSky6 30s linear infinite;
+	-moz-animation: moveSky6 30s linear infinite;
+	-ms-animation: moveSky6 30s linear infinite;
+	-o-animation: moveSky6 30s linear infinite;
+	animation: moveSky6 30s linear infinite;
+}
+
+.sky7 {
+	width: 15%;
+	top: 25%;
+	-webkit-animation: moveSky7 40s linear infinite;
+	-moz-animation: moveSky7 40s linear infinite;
+	-ms-animation: moveSky7 40s linear infinite;
+	-o-animation: moveSky7 40s linear infinite;
+	animation: moveSky7 40s linear infinite;
+}
+
+.sky8 {
+	width: 10%;
+	top: 3%;
+	z-index: 2;
+	-webkit-animation: moveSky8 20s linear infinite;
+	-moz-animation: moveSky8 20s linear infinite;
+	-ms-animation: moveSky8 20s linear infinite;
+	-o-animation: moveSky8 20s linear infinite;
+	animation: moveSky8 20s linear infinite;
+}
+
+@-webkit-keyframes moveSky1 {
+	from {
+		left: -25%;
+	}
+
+	to {
+		left: 125%;
+	}
+}
+
+@-moz-keyframes moveSky1 {
+	from {
+		left: -25%;
+	}
+
+	to {
+		left: 125%;
+	}
+}
+
+@-ms-keyframes moveSky1 {
+	from {
+		left: -25%;
+	}
+
+	to {
+		left: 125%;
+	}
+}
+
+@-o-keyframes moveSky1 {
+	from {
+		left: -25%;
+	}
+
+	to {
+		left: 125%;
+	}
+}
+
+@keyframes moveSky1 {
+	from {
+		left: -25%;
+	}
+
+	to {
+		left: 125%;
+	}
+}
+
+@-webkit-keyframes moveSky2 {
+	from {
+		left: -10%;
+	}
+
+	to {
+		left: 110%;
+	}
+}
+
+@-moz-keyframes moveSky2 {
+	from {
+		left: -10%;
+	}
+
+	to {
+		left: 110%;
+	}
+}
+
+@-ms-keyframes moveSky2 {
+	from {
+		left: -10%;
+	}
+
+	to {
+		left: 110%;
+	}
+}
+
+@-o-keyframes moveSky2 {
+	from {
+		left: -10%;
+	}
+
+	to {
+		left: 110%;
+	}
+}
+
+@keyframes moveSky2 {
+	from {
+		left: -10%;
+	}
+
+	to {
+		left: 110%;
+	}
+}
+
+@-webkit-keyframes moveSky3 {
+	from {
+		left: -15%;
+	}
+
+	to {
+		left: 115%;
+	}
+}
+
+@-moz-keyframes moveSky3 {
+	from {
+		left: -15%;
+	}
+
+	to {
+		left: 115%;
+	}
+}
+
+@-ms-keyframes moveSky3 {
+	from {
+		left: -15%;
+	}
+
+	to {
+		left: 115%;
+	}
+}
+
+@-o-keyframes moveSky3 {
+	from {
+		left: -15%;
+	}
+
+	to {
+		left: 115%;
+	}
+}
+
+@keyframes moveSky3 {
+	from {
+		left: -15%;
+	}
+
+	to {
+		left: 115%;
+	}
+}
+
+@-webkit-keyframes moveSky4 {
+	from {
+		left: -20%;
+	}
+
+	to {
+		left: 120%;
+	}
+}
+
+@-moz-keyframes moveSky4 {
+	from {
+		left: -20%;
+	}
+
+	to {
+		left: 120%;
+	}
+}
+
+@-ms-keyframes moveSky4 {
+	from {
+		left: -20%;
+	}
+
+	to {
+		left: 120%;
+	}
+}
+
+@-o-keyframes moveSky4 {
+	from {
+		left: -20%;
+	}
+
+	to {
+		left: 120%;
+	}
+}
+
+@keyframes moveSky4 {
+	from {
+		left: -20%;
+	}
+
+	to {
+		left: 120%;
+	}
+}
+
+@-webkit-keyframes moveSky5 {
+	from {
+		left: -110%;
+	}
+
+	to {
+		left: 110%;
+	}
+}
+
+@-moz-keyframes moveSky5 {
+	from {
+		left: -110%;
+	}
+
+	to {
+		left: 110%;
+	}
+}
+
+@-ms-keyframes moveSky5 {
+	from {
+		left: -110%;
+	}
+
+	to {
+		left: 110%;
+	}
+}
+
+@-o-keyframes moveSky5 {
+	from {
+		left: -110%;
+	}
+
+	to {
+		left: 110%;
+	}
+}
+
+@keyframes moveSky5 {
+	from {
+		left: -110%;
+	}
+
+	to {
+		left: 110%;
+	}
+}
+
+@-webkit-keyframes moveSky6 {
+	from {
+		left: -50%;
+	}
+
+	to {
+		left: 150%;
+	}
+}
+
+@-moz-keyframes moveSky6 {
+	from {
+		left: -50%;
+	}
+
+	to {
+		left: 150%;
+	}
+}
+
+@-ms-keyframes moveSky6 {
+	from {
+		left: -50%;
+	}
+
+	to {
+		left: 150%;
+	}
+}
+
+@-o-keyframes moveSky6 {
+	from {
+		left: -50%;
+	}
+
+	to {
+		left: 150%;
+	}
+}
+
+@keyframes moveSky6 {
+	from {
+		left: -50%;
+	}
+
+	to {
+		left: 150%;
+	}
+}
+
+@-webkit-keyframes moveSky7 {
+	from {
+		left: -100%;
+	}
+
+	to {
+		left: 130%;
+	}
+}
+
+@-moz-keyframes moveSky7 {
+	from {
+		left: -100%;
+	}
+
+	to {
+		left: 130%;
+	}
+}
+
+
+@-ms-keyframes moveSky7 {
+	from {
+		left: -100%;
+	}
+
+	to {
+		left: 130%;
+	}
+}
+
+
+@-o-keyframes moveSky7 {
+	from {
+		left: -100%;
+	}
+
+	to {
+		left: 130%;
+	}
+}
+
+
+@keyframes moveSky7 {
+	from {
+		left: -100%;
+	}
+
+	to {
+		left: 130%;
+	}
+}
+
+@-webkit-keyframes moveSky8 {
+	from {
+		left: -150%;
+	}
+
+	to {
+		left: 150%;
+	}
+}
+
+@-moz-keyframes moveSky8 {
+	from {
+		left: -150%;
+	}
+
+	to {
+		left: 150%;
+	}
+}
+
+@-ms-keyframes moveSky8 {
+	from {
+		left: -150%;
+	}
+
+	to {
+		left: 150%;
+	}
+}
+
+@-o-keyframes moveSky8 {
+	from {
+		left: -150%;
+	}
+
+	to {
+		left: 150%;
+	}
+}
+
+@keyframes moveSky8 {
+	from {
+		left: -150%;
+	}
+
+	to {
+		left: 150%;
+	}
+}
+
+.aboutHillffair {
+	width: 70%;
+	height: 80%;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 4;
+	left: 15%;
+	top: 10%;
+	box-shadow: 0px 0px 3px 3px rgba(51, 102, 153, 0.8);
+	text-align: center;
+	padding: 30px 20px;
+	overflow: auto;
+	color: rgb(51, 102, 153);
+}
+
+.aboutTitle, .sponsorsTitle{
+	padding: 10px 20px;
+	font-family: badaboom;
+	font-size: 2em;
+	display: inline-block;
+	position: relative;
+}
+
+.aboutText {
+	text-align: justify;
+	font-family: antipasto;
+	font-size: 1.5em;
+}
+
+.aboutText p {
+	margin: 20px;
+}
+
+.sponsors {
+	width: 70%;
+	height: 80%;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 4;
+	left: 15%;
+	box-shadow: 0px 0px 3px 3px rgba(51, 102, 153, 0.8);
+	text-align: center;
+	padding: 20px;
+	overflow: auto;
+	color: rgb(51, 102, 153);
+}
+
+.sponsorsTitle{
+	font-family: badaboom;
+	font-size: 2em;
+	display: inline-block;
+	position: relative;
+}
+
+.sponsorsList {
+	width: 100%;
+}
+
+.sponsor {
+	width: 33%;
+}
+
+@media (max-width: 1000px) and (min-width: 750px){
+	.aboutHillffair {
+		width: 80%;
+		left: 10%;
+	}
+}
+
+.aboutText p {
+	margin: 15px;
+}
+
+.sponsors {
+	width: 70%;
+	height: 80%;
+	position: absolute;
+	background-color: rgba(255, 255, 255, 1);
+	z-index: 4;
+	left: 15%;
+	box-shadow: 0px 0px 3px 3px rgba(51, 102, 153, 0.8);
+	text-align: center;
+	padding: 20px;
+	overflow: auto;
+	color: rgb(51, 102, 153);
+}
+
+.sponsorsTitle{
+	font-family: badaboom;
+	font-size: 2em;
+	display: inline-block;
+	position: relative;
+}
+
+.sponsorsList {
+	width: 100%;
+}
+
+.sponsor {
+	width: 33%;
+}
+
+.smallMenu {
+	width: 150%;
+	padding: 10px 0px;
+	height: auto;
+	display: inline-block;
+	position: relative;
+	left: -25%;
+	top: 20px;
+	text-align: center;
+	font-family: antipasto;
+	background-color: #F9DB2F;
+	z-index: 2;
+	border-radius: 10px;
+	box-shadow: 2px 2px 1px 1px rgba(0, 0, 0, 0.2);
+}
+
+.smallMenuLink {
+	font-size: 1.2em;
+	padding: 5px;
+	color: rgb(51, 102, 153);
+	cursor: pointer;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	transition: all 0.2s;
+}
+
+.smallMenuLink:hover {
+	background-color: #EDBC30;
+}
+
+.smallMenuLink a {
+	width: 100%;
+	display: inline-block;
+	text-decoration: none;
+	color: rgb(51, 102, 153);
+}
