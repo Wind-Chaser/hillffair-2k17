@@ -100,38 +100,3 @@
     }
 }
 /*MOBILE*/
-
-body.mobile > .mobileUnderProgress {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    z-index: 1005;
-    background-color: #1b1b1b;
-}
-
-body.mobile > .mobileUnderProgress > img {
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    -webkit-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    transform: scale(1.2);
-}
-
-body.mobile > .mobileUnderProgress > h1 {
-    font-size: 1.8rem;
-    position: absolute;
-    text-align: center;
-    bottom: 5%;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
-
-body.mobile > #preload {
-    display: none;
-}
