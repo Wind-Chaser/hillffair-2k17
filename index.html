@@ -60,20 +60,19 @@ window.uabInject = function() {};
                 <a>
               </li>
 
-              <li style="height: 0px; transform: matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1);">
-                  <a href="/event" target-new="_blank">
+              <li style="height: 0px; transform: matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1);" onclick="openInNewTab('https://hillffair2k17.herokuapp.com/event');">
+
                   <div class="after" style="opacity: 1;"></div>
                   <div class="logorub"><img class="spip_logo spip_logos" alt="" src="./images/event.png" width="68" height="45"></div>
                   <h1>Events</h1>
-                </a>
+
               </li>
 
-              <li  style="height: 0px; transform: matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1);">
-                  <a href="/contact" target="_blank">
+              <li  style="height: 0px; transform: matrix3d(1, 0, 0, 0, 0, 0, 1, 0, 0, -1, 0, 0, 0, 0, 0, 1);" onclick="openInNewTab('https://hillffair2k17.herokuapp.com/contact');">
+
                   <div class="after" style="opacity: 1;"></div>
                   <div class="logorub"><img class="spip_logo spip_logos" alt="" src="./images/contact.png" width="43" height="48"></div>
                   <h1>Contact</h1>
-                </a>
               </li>
             </ul>
         </div>
@@ -409,6 +408,12 @@ window.uabInject = function() {};
                         </section>
 
         </div>
+        <script type="text/javascript">
+        function openInNewTab(url) {
+      var win = window.open(url, '_blank');
+       win.focus();
+       }
+        </script>
         <!-- GOOGLE ANALYTICS -->
         <script type="text/javascript">
         var _gaq = _gaq || [];
