@@ -35,21 +35,7 @@
         /*  overflow: auto;
        -webkit-overflow-scrolling: touch; */
     }
-    #top-left-fixed-block,
-    #portfolio-details,
-    #luxembourg #portfolio > .portfolio-nav > span,
-    #portfolio-details > div:last-child > nav > a.close > img,
-    #luxembourg #portfolio > .portfolio-tab > .column > .prow > div,
-    #luxembourg #portfolio > .portfolio-tab,
-    #luxembourg #portfolio > .portfolio-tab > .column > .prow .thumb_nb,
-    #luxembourg #portfolio > .portfolio-tab > .column > .prow .thumb_color,
-    #luxembourg #portfolio > .portfolio-tab > .column > .prow > div > .shadow,
-    #luxembourg #portfolio > .portfolio-tab > .column > .prow > div > .description,
-    #luxembourg #portfolio > .portfolio-tab > .column > .prow > div > .linkIcon {
-        -webkit-transition: none;
-        -o-transition: none;
-        transition: none;
-    }
+
     #top-left-fixed-block {
         right: 2%;
         top: 2%;
