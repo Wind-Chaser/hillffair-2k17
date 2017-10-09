@@ -141,4 +141,137 @@
 
 
   }
+  .w990px {
+      width: 500px;
+      margin: 0 auto;
+      padding: 0px 0;
+      position: relative;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+      font-size: 13px;
+      font-size: 1.3rem;
+  }
+  .w990px .perspectiveH1 {
+      -webkit-perspective: 150px;
+      -moz-perspective: 150px;
+      -ms-perspective: 150px;
+      perspective: 150px;
+  }
+  .w990px h1 {
+      width: 80px;
+  }
+  #interests_about_me {
+      width: 250px;
+      margin: 0 0;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: center'
+      -webkit-justify-content: center;
+      flex-wrap: wrap;
+      -webkit-flex-wrap: wrap;
+      position: relative;
+  }
+  #interests_about_me > div {
+      width: 120px;
+      height: 120px;
+      background-color: #d5d2d4;
+      margin-bottom: 5px;
+      margin-right: 5px;
+      overflow: hidden;
+  }
+  #interests_about_me > div > span {
+      position: absolute;
+      display: block;
+      width: 120px;
+      height: 120px;
+      background-image: url(../WD_IMAGES/_FRANCE/interests-spritesheets-icons.png);
+      background-repeat: no-repeat;
+      background-position: 0 0;
+  }
+  #interests_about_me > div > .fillBg {
+      background-color: #ca0a60;
+      width: 100%;
+      height: 0;
+  }
+  #interests_about_me > .heart {
+      background-color: rgba(0, 0, 0, 0);
+      background-image: url("../WD_IMAGES/_FRANCE/Ilove-icon-heart-bg.png");
+      background-position: center center;
+      background-repeat: no-repeat;
+      display: none;
+      height: 37px;
+      left: 50%;
+      margin-left: -38px;
+      margin-top: -35px;
+      position: absolute;
+      width: 35px;
+  }
+  #interests_about_me > .heart > img {
+      margin-left: 7px;
+      margin-top: 7px;
+  }
+  #interests_about_me > .heart > h1 {
+      color: #FFFFFF;
+      font-family: 'Oswald', sans-serif;
+      font-size: 22px;
+      font-size: 2.2rem;
+      font-weight: 300;
+      left: 2px;
+      position: absolute;
+      text-align: left;
+      text-transform: uppercase;
+      top: 6px;
+      z-index: 2;
+  }
+  #luxembourg #awards {
+      width: 75%;
+      height: 200px;
+      position: relative;
+      display: flex;
+      justify-content:center;
+  }
+  #luxembourg #awards > .titre {
+      text-align: center;
+      width: 120px;
+      position: relative;
+      padding-top: 55px;
+  }
+  #luxembourg #awards > .titre span {
+      padding-left: 5px;
+  }
+  #luxembourg #awards > .titre > div:first-child {
+      font-weight: 400;
+      font-size: 40px;
+      font-size: 4rem;
+      color: #9f8764;
+  }
+  #luxembourg #awards > .titre > div:last-child {
+      color: #68695F;
+      font-size: 20px;
+      font-size: 2.0rem;
+      font-weight: 300;
+      letter-spacing: 0.1rem;
+  }
+  .sponsors{
+    width: 90%;
+  }
+  .sponsor_company{
+  	  margin:20px;
+  	  width: 100px;
+  		height: 100px;
+  }
+  .elephant_image{
+  	  height: 150px;
+  		width: 150px;
+  		top:-100px;
+  }
+  .portfolio-bg-tab{
+    display: none;
+  }
+  .bandeau{
+     width: 90%;
+  }
 }
