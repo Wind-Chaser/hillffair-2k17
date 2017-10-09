@@ -18,7 +18,7 @@ html, body {
 }
 body {
     background-color: #dcdbdc;
-    overflow-x: hidden;
+    /*overflow-x: hidden;*/
 }
 #awwwards {
     position: fixed;
@@ -222,7 +222,7 @@ h1 {
 #main {
     height: 100%;
     margin: 0 auto;
-    min-width: 990px;
+  /*  min-width: 990px;*/
     width: 100%;
     position: relative;
     z-index: 5;
@@ -427,7 +427,6 @@ h1.rotateH1BE > h1 {
     color: #3f8093;
 }
 .mainPicture {
-    min-width: 990px;
     min-height: 800px;
     margin: 0 auto;
     background-position: center 0px;
