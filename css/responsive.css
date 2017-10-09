@@ -99,7 +99,7 @@
         height: 830px;
     }
 }
-@media screen and (min-width: 500px) and (max-width: 1500px) {
+@media screen and (min-width: 450px) and (max-width: 1500px) {
 
  .mainPicture{
    display: block;
@@ -114,8 +114,13 @@
 }
 
 /*MOBILE*/
-@media screen and (max-width:500px){
-
+@media screen and (max-width:450px){
+   body{
+     max-width: 450px;
+   }
+    #main{
+      max-width: 450px;
+    }
    .mainPicture {
     display: none;
   }
@@ -124,7 +129,7 @@
     background-color: #fff;
     background-image: url(../images/mobile-landing.png);
     background-size: cover;
-        min-height: 500px;
+        min-height: 600px;
         margin: 0 auto;
         background-position: center 0px;
         background-repeat: no-repeat;
@@ -142,7 +147,7 @@
 
   }
   .w990px {
-      width: 500px;
+      width: 100%;
       margin: 0 auto;
       padding: 0px 0;
       position: relative;
@@ -159,6 +164,19 @@
   }
   .w990px h1 {
       width: 80px;
+  }
+  #illustration_france, #illustration_luxembourg, #illustration_belgique {
+      width:80%;
+      min-height: 350px;
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      margin-left: -295px;
+      -webkit-perspective: 500px;
+      -moz-perspective: 500px;
+      -ms-perspective: 500px;
+      perspective: 500px;
+      z-index: 10;
   }
   #interests_about_me {
       width: 250px;
@@ -272,6 +290,45 @@
     display: none;
   }
   .bandeau{
-     width: 90%;
+     width: 72%;
+  }
+  #luxembourg .luxembourg-1 .bandeau {
+      background-color: #68695F;
+      color: #E0DEDD;
+      font-family: 'Oswald', sans-serif;
+      font-size: 25px;
+      font-size: 4rem;
+      font-weight: 300;
+      letter-spacing: 0.2rem;
+      padding: 2px;
+      text-align: center;
+      margin: 5px 0;
+      margin-top: 20px;
+  }
+  #luxembourg #portfolio > .portfolio-nav {
+      margin-top: 50px;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flex;
+      display: -o-flex;
+      display: flex;
+      justify-content: center;
+      -webkit-justify-content: center;
+      align-items: center;
+      -webkit-align-items: center;
+  }
+  #luxembourg #portfolio > .portfolio-nav > span {
+      color: #9F8764;
+      font-size: 15px;
+      font-size: 2rem;
+      letter-spacing: 0.4rem;
+      padding: 5px 20px;
+      text-align: center;
+      text-transform: uppercase;
+      -webkit-transition: all 650ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+      -moz-transition: all 650ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+      -ms-transition: all 650ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+      -o-transition: all 650ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
+      transition: all 650ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
   }
 }
