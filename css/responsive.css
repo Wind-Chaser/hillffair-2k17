@@ -116,10 +116,10 @@
 /*MOBILE*/
 @media screen and (max-width:450px){
    body{
-     max-width: 450px;
+     width:100%;
    }
     #main{
-      max-width: 450px;
+      width:100%;
     }
    .mainPicture {
     display: none;
