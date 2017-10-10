@@ -179,9 +179,8 @@
       z-index: 10;
   }
   #interests_about_me {
-      width: 300px;
+      width: 280px;
       margin: 0 0;
-      margin-left: -7px;
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
