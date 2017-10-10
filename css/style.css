@@ -1282,6 +1282,7 @@ background-size: cover; */
     transform: rotateY(0deg);
 }
 #luxembourg #portfolio > .portfolio-tab > .column > .prow > div > .description {
+    width: 792px;
     position: absolute;
     z-index: 20;
     bottom: -80px;

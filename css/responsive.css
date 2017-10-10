@@ -407,4 +407,49 @@
       left: 0;
       top: 0;
   }
+
+  #slides_about_me {
+      width: 100%;
+      margin-bottom: 100px;
+      position: relative;
+  }
+  #slides_about_me .description{
+    width: 350px;
+  }
+  #slides_about_me .descriptionPadding {
+      font-size: 17px;
+      font-size: 1.1rem;
+      line-height: 2.0rem;
+      font-family: 'Oswald', sans-serif;
+      font-weight: 300;
+      text-align: center;
+      padding: 0px 0px;
+      text-align: center;
+  }
+  #slides_about_me .descriptionPadding a {
+      color: #CA0A60;
+      text-decoration: none;
+  }
+  .slick-list {
+      position: relative;
+      display: block;
+      margin: 0;
+      padding: 0;
+  }
+  .apropos-1{
+      height: 80%;
+    }
+    #mob-ticker{
+      display: block;
+      padding-left:10px;
+    }
+    .rdv-head{
+      max-height: 75px;
+    }
+    #mob-ticker ul{
+    max-height: 80px;
+    }
+    #mob-ticker li{
+      font-size: 0.9em;
+    }
 }
