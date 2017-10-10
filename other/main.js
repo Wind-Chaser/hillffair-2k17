@@ -121,11 +121,11 @@
 
 		else{
 			menuItemImg.forEach(function(item){
-				item.className = "menuItemImg notinview";
+				item.className = "menuItemImg inview";
 			});
 
 			menuItemName.forEach(function(item){
-				item.className = "menuItemName notinview";
+				item.className = "menuItemName inview";
 			});
 
 			document.getElementsByClassName("menuItemRegister")[0].className = "menuItemRegister";

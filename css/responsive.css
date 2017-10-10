@@ -111,6 +111,12 @@
  .mainPicture2{
     display: none;
   }
+  .menu{
+    display: none;
+  }
+  .navIcon{
+    display: none;
+  }
 }
 
 /*MOBILE*/
@@ -124,6 +130,16 @@
    .mainPicture {
     display: none;
   }
+  .navigation{
+    display: none;
+  }
+  .menu{
+    display: block;
+  }
+  .navIcon{
+    display: block;
+  }
+
  .mainPicture2{
     display: block;
     background-color: #fff;
@@ -451,5 +467,12 @@
     }
     #mob-ticker li{
       font-size: 0.9em;
+    }
+    .menuItem  a{
+       text-decoration: none;
+       color: #fff;
+    }
+    .menu{
+       margin-top: -10px;
     }
 }

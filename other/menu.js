@@ -12,12 +12,12 @@
 
 		clubItems[i].addEventListener("mouseleave", function(){
 				document.getElementsByClassName("eventsMenuSpiderman")[0].className = "eventsMenuSpiderman pos" + active;
-				document.getElementsByClassName("spiderWeb")[0].className = "spiderWeb pos" + active;
+				document.getElementsByClassName("spiderWeb")[0].className = "spiderWeb pos" + active;	
 		});
 
 		clubItems[i].addEventListener("click", function(){
 			toggleMenu();
-
+			
 				document.getElementsByClassName("events" + active)[0].className = "events" + active + " events outsideRight";
 			document.getElementsByClassName("events" + this.hoverId)[0].className = "events" + this.hoverId + " events insideBody";
 			active = this.hoverId;
@@ -36,7 +36,7 @@
 			menuState = 0;
 		}
 	}
-
+	
 	document.getElementsByClassName("clubIcon")[0].addEventListener("click", toggleMenu);
 
 })();

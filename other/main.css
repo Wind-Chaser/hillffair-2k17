@@ -93,6 +93,160 @@ body {
 /*
 	NAV BAR
 */
+.navIcon {
+	width: 40px;
+	position: fixed;
+	top: 30px;
+	right: 40px;
+	z-index: 20;
+	cursor: pointer;
+}
+
+.navIcon .line {
+	width: 100%;
+	height: 5px;
+	background-color: #ffffff;
+	margin-bottom: 5px;
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+	position: relative;
+}
+
+.navIcon.notClicked .line {
+	-webkit-transform-origin: 0px 50%;
+	-moz-transform-origin: 0px 50%;
+	transform-origin: 0px 50%;
+}
+
+.navIcon.notClicked:hover .line1 {
+	width: 70%;
+}
+
+.navIcon.notClicked:hover .line3 {
+	width: 70%;
+}
+
+.navIcon.clicked {
+	-webkit-transform-origin: 50% 50%;
+	-moz-transform-origin: 50% 50%;
+	transform-origin: 50% 50%;
+}
+
+.navIcon.clicked .line1 {
+	top: 10px;
+	-webkit-transform: rotateZ(-45deg);
+	-moz-transform: rotateZ(-45deg);
+	transform: rotateZ(-45deg);
+}
+
+.navIcon.clicked .line2 {
+	opacity: 0;
+}
+
+.navIcon.clicked .line3 {
+	top: -10px;
+	-webkit-transform: rotateZ(45deg);
+	-moz-transform: rotateZ(45deg);
+	transform: rotateZ(45deg);
+}
+
+.menu {
+	width: 100%;
+	height: 100%;
+	background-color: rgba(0, 0, 0, 1);
+	position: fixed;
+	left: 0px;
+	z-index: 20;
+	padding-top: 15%;
+}
+
+.menu.invisible {
+	left: -100%;
+}
+
+.menu.visible {
+	left: 0px;
+}
+
+.menuItem {
+	display: inline-block;
+	width: 32%;
+	text-align: center;
+	cursor: pointer;
+}
+
+.menuItem svg {
+	width: 50%;
+}
+
+.menuItemImg {
+	position: relative;
+	-webkit-transition: all 0.3s ease-in;
+	-moz-transition: all 0.3s ease-in;
+	transition: all 0.3s ease-in;
+}
+
+.menuItemImg.notinview {
+	top: -1000px;
+}
+
+.menuItemImg.inview {
+	top: 0px;
+}
+
+.menuItemName {
+	position: relative;
+	color: white;
+	font-family: badaboom;
+	padding: 20px;
+	font-size: 2em;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.menuItemName.notinview {
+	bottom: -800px;
+}
+
+.menuItemName.inview {
+	bottom: 0px;
+}
+
+.menuItemRegister {
+	width: 100%;
+	font-size: 2em;
+	padding: 20px;
+	display: none;
+	font-family: badaboom;
+	position: relative;
+	text-decoration: center;
+	color: white;
+	bottom: -800px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+.menuItemNameRegister {
+	width: 100%;
+	text-align: center;
+}
+
+.menuItemRegister.inview {
+	bottom: 0px;
+}
+
+.menuItemRegister a {
+	display: block;
+	color: white;
+	text-decoration: none;
+}
+
+.registerLinkMenu {
+	display: none;
+}
 
 /*
 	GALLERY BODY
