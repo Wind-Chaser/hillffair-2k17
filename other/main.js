@@ -101,13 +101,12 @@
 	}
 
 	function toggleMenu(){
-
 		if(menuState == 0){
 			menuState = 1;
 			menu.className = "menu visible";
 			navIcon.className = "navIcon clicked";
 
-			menuItemImg[0].getElementsByTagName('path')[0].setAttribute('stroke-dashoffset', 0);
+			//menuItemImg[0].getElementsByTagName('path')[0].setAttribute('stroke-dashoffset', 0);
 			menuItemImg.forEach(function(item){
 				item.className = "menuItemImg inview";
 			});
@@ -116,29 +115,27 @@
 				item.className = "menuItemName inview";
 			});
 
-			document.getElementsByClassName("menuItemRegister")[0].className = "menuItemRegister inview";
+			//document.getElementsByClassName("menuItemRegister")[0].className = "menuItemRegister inview";
 		}
 
 		else{
+
 			menuItemImg.forEach(function(item){
-				item.className = "menuItemImg inview";
+				item.className = "menuItemImg notinview";
 			});
 
 			menuItemName.forEach(function(item){
-				item.className = "menuItemName inview";
+				item.className = "menuItemName notinview";
 			});
 
-			document.getElementsByClassName("menuItemRegister")[0].className = "menuItemRegister";
-
+		//	document.getElementsByClassName("menuItemRegister")[0].className = "menuItemRegister";
 			setTimeout(function(){
 				menu.className = "menu invisible";
 				navIcon.className = "navIcon notClicked";
 			}, 300);
-
-			menuState = 0;
+			 menuState = 0;
 		}
 	}
-
 	navIcon.addEventListener("click", toggleMenu, false);
 
 	enquire.register("screen and (min-width: 750px)", adjustObj, false);
