@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Wind-Chaser/hillffair-2k17#readme",
   "dependencies": {
-    "express": "^4.16.1"
+    "body-parser": "^1.18.2",
+    "express": "^4.16.1",
+    "mongoose": "^4.12.1"
   }
 }

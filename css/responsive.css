@@ -431,6 +431,7 @@
   }
   #slides_about_me .description{
     width: 350px;
+    -webkit-overflow-scrolling: touch;
   }
   #slides_about_me .descriptionPadding {
       font-size: 17px;
