@@ -16,6 +16,7 @@ app.get('/event',function (req,res){
   res.sendFile(__dirname+"/events.html");
 });
 app.get('/contact',function (req,res){
+  console.log("okay");
   res.sendFile(__dirname+"/contacts.html");
 });
 app.get('/register',function (req,res){
