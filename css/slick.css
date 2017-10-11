@@ -16,7 +16,6 @@
 }
 .slick-list {
     position: relative;
-    overflow: hidden;
     display: block;
     margin: 0;
     padding: 0;
@@ -58,6 +57,7 @@
 .slick-slide {
     float: left;
     height: 100%;
+    width: 22%;
     min-height: 200px;
     display: none;
 }

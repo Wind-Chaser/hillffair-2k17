@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
+@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
 .main-fool {
 	background-image: url("../img/main-fool-2.png");
 	background-repeat: no-repeat;
@@ -323,7 +325,17 @@
 	padding-bottom: 30px;
 }
 .sponsors_title {
-	font-size: 25px;
+	font-size: 46px;
+font-weight: 800;
+font-family: 'Advent Pro', sans-serif;
+text-align: center;
+}
+#lower_rights{
+font-family: Helvetica, sans-serif;
+font-size: 16px;
+font-weight: 400;
+line-height: 1.428571429;
+color: #fff;
 }
 .sponsors_list{
 	display: flex;

@@ -442,6 +442,7 @@ background-size: cover; */
     /*-webkit-background-size: 100%;
     background-size: 100%;*/
     position: relative;
+    background-size: cover;
     -webkit-transform: translateZ(0);
     -ms-transform: translateZ(0);
     -o-transform: translateZ(0);
@@ -562,17 +563,19 @@ background-size: cover; */
     background-image: url(../images/base.png);
 }
 .fr_eiffelTower {
-    width: 92px;
+    width: 230px;
     height: 246px;
-    left: 50%;
+    left: 40%;
     margin-left: -45px;
+    margin-bottom: 7px;
     background-image: url(../images/tower.png);
 }
 .fr_reverbere-1 {
     width: 20px;
     height: 124px;
     background-image: url(../images/pillar.png);
-    left: 30%;
+    left: 31%;
+    margin-bottom: 18px;
     margin-left: -10px;
 }
 .fr_reverbere-1:nth-child(odd) {
@@ -584,6 +587,7 @@ background-size: cover; */
     background-image: url(../images/bigpillar.png);
     left: 20%;
     margin-left: -13px;
+    margin-bottom: 10px;
 }
 .fr_reverbere-2:nth-child(odd) {
     left: 80%
@@ -1884,6 +1888,7 @@ background-size: cover; */
 #belgique .texte2 > .w990px > .social-icons {
     text-align: center;
     margin-top: 40px;
+    margin-left: -10px;
     margin-bottom: 30px;
 }
 #belgique .texte2 > .w990px > .social-icons a {
