@@ -424,6 +424,24 @@
       left: 0;
       top: 0;
   }
+  #luxembourg #portfolio > .portfolio-tab > .column > .prow > div > .description {
+      width: 792px;
+      position: absolute;
+      z-index: 20;
+      bottom: 0px;
+      left: 0;
+      width: 100%;
+      height: auto;
+      text-align: center;
+      padding: 20px 5px;
+      background-color: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275) 240ms;
+      -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275) 240ms;
+      -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275) 240ms;
+      -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275) 240ms;
+      transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275) 240ms;
+  }
 
   #slides_about_me {
       width: 100%;
