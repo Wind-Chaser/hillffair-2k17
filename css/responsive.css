@@ -209,18 +209,18 @@
       position: relative;
   }
   #interests_about_me > div {
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       background-color: #d5d2d4;
-      margin-bottom: 15px;
-      margin-right: 20px;
+      margin-bottom: 5px;
+      margin-right: 5px;
       overflow: hidden;
   }
   #interests_about_me > div > span {
       position: absolute;
       display: block;
-      width: 120px;
-      height: 120px;
+      width: 130px;
+      height: 130px;
       background-image: url(../WD_IMAGES/_FRANCE/interests-spritesheets-icons.png);
       background-repeat: no-repeat;
       background-position: 0 0;
@@ -229,6 +229,7 @@
       background-color: #ca0a60;
       width: 100%;
       height: 0;
+      display: block;
   }
   #interests_about_me > .heart {
       background-color: rgba(0, 0, 0, 0);

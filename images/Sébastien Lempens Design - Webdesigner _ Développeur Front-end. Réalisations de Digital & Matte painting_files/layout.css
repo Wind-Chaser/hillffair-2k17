@@ -1,0 +1,557 @@
+/*!
+* www.KNACSS.com V2.9.3 (2014-02) @author: Raphael Goetter, Alsacreations
+* Licence WTFPL http://www.wtfpl.net/
+*/
+
+/* ----------------------------- */
+
+/* == soft reset                 */
+
+/* ----------------------------- */
+
+/* switching box model for all elements */
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/* soft reset */
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+ul,
+ol {
+  padding-left: 2em;
+}
+
+ul.unstyled {
+  list-style: none;
+}
+
+img {
+  vertical-align: middle;
+  border: 0;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+}
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure {
+  margin: 0;
+}
+
+/* ----------------------------- */
+
+/* == typography                 */
+
+/* ----------------------------- */
+
+/* base font-size corresponds to 10px and is adapted to rem unit */
+
+html {
+  font-size: 62.5%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+body {
+  background-color: #ffffff;
+  color: #000000;
+  font-family: Helvetica, Arial, sans-serif;
+  font-size: 1.4em;
+  line-height: 1.5;
+}
+
+/* font-sizing for content */
+
+/* preserve vertical-rythm, thanks to http://soqr.fr/vertical-rhythm/ */
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+label,
+textarea,
+caption,
+details,
+figure,
+hgroup {
+  margin-top: .75em;
+  margin-bottom: 0;
+  line-height: 1.5;
+}
+
+h1,
+.h1-like {
+  margin-top: 0.65625em;
+  margin-bottom: 0;
+  font-size: 3.2rem;
+  line-height: 1.3125;
+}
+
+h2,
+.h2-like {
+  margin-top: 0.75em;
+  margin-bottom: 0;
+  font-size: 2.8rem;
+  line-height: 1.5;
+}
+
+h3,
+.h3-like {
+  margin-top: 0.875em;
+  margin-bottom: 0;
+  font-size: 2.4rem;
+  line-height: 1.75;
+}
+
+h4,
+.h4-like {
+  margin-top: 1.05em;
+  margin-bottom: 0;
+  font-size: 2rem;
+  line-height: 1.05;
+}
+
+h5,
+.h5-like {
+  margin-top: 1.1666666666666667em;
+  margin-bottom: 0;
+  font-size: 1.8rem;
+  line-height: 1.1666666666666667;
+}
+
+h6,
+.h6-like {
+  margin-top: 1.3125em;
+  margin-bottom: 0;
+  font-size: 1.6rem;
+  line-height: 1.3125;
+}
+
+/* alternate font-sizing */
+
+.smaller {
+  font-size: 0.7142857142857143em;
+}
+
+.small {
+  font-size: 0.8571428571428571em;
+}
+
+.big {
+  font-size: 1.1428571428571428em;
+}
+
+.bigger {
+  font-size: 1.2857142857142858em;
+}
+
+.biggest {
+  font-size: 1.4285714285714286em;
+}
+
+code,
+pre,
+samp,
+kbd {
+  white-space: pre-line;
+  /* IE fix */
+  white-space: pre-wrap;
+  font-family: Consolas, 'DejaVu Sans Mono', Courier, monospace;
+  line-height: 1;
+}
+
+code,
+kbd,
+mark {
+  border-radius: 2px;
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+font-weight: 300;
+}
+
+kbd {
+  padding: 0 2px;
+  border: 1px solid #999;
+}
+
+code {
+  padding: 2px 4px;
+  background: rgba(0, 0, 0, 0.04);
+  color: #b11;
+}
+
+mark {
+  padding: 2px 4px;
+  background: #ff0;
+}
+
+sup,
+sub {
+  vertical-align: 0;
+  position: relative;
+}
+
+sup {
+  bottom: 1ex;
+}
+
+sub {
+  top: .5ex;
+}
+
+/* ----------------------------- */
+
+/* == hiding content             */
+
+/* ----------------------------- */
+
+/* hiding content */
+
+.visually-hidden {
+  position: absolute;
+  left: -7000px;
+  overflow: hidden;
+}
+
+[dir=rtl] .visually-hidden {
+  left: auto;
+  right: -7000px;
+}
+
+.desktop-hidden {
+  display: none;
+}
+
+/* hidden on desktop */
+
+/* ----------------------------- */
+
+/* == skip links styling         */
+
+/* ----------------------------- */
+
+.skip-links {
+  position: absolute;
+}
+
+.skip-links a {
+  position: absolute;
+  left: -7000px;
+  padding: 0.5em;
+  background: black;
+  color: white;
+  text-decoration: none;
+}
+
+.skip-links a:focus {
+  position: static;
+}
+
+/* ----------------------------- */
+
+/* == browsers consistency       */
+
+/* ----------------------------- */
+
+/* avoid top margins on first content element */
+
+p:first-child,
+ul:first-child,
+ol:first-child,
+dl:first-child,
+blockquote:first-child,
+pre:first-child,
+h1:first-child,
+h2:first-child,
+h3:first-child,
+h4:first-child,
+h5:first-child,
+h6:first-child {
+  margin-top: 0;
+}
+
+/* avoid margins on nested elements */
+
+li p,
+li ul,
+li ol {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* max values */
+
+img,
+table,
+td,
+blockquote,
+code,
+pre,
+textarea,
+input,
+video {
+  max-width: 100%;
+}
+
+/* margin-bottom on tables */
+
+table {
+  margin-bottom: 1.5em;
+}
+
+/* Google Gmap3 bug fix on images */
+
+:not(.gm-style) img {
+  height: auto !important;
+}
+
+.ie678 .gm-style img {
+  height: 100%;
+  /* IE678 hack */
+}
+
+.gm-style img,
+.gmnoscreen img,
+.gmnoprint img {
+  max-width: none !important;
+}
+
+/* scripts */
+
+body > script {
+  display: none !important;
+}
+
+/* ----------------------------- */
+
+/* ==layout and modules          */
+
+/* ----------------------------- */
+
+/* float layout */
+
+/* module, gains superpower "BFC" Block Formating Context */
+
+.mod {
+  overflow: hidden;
+}
+
+/* blocks that needs to be placed under floats */
+
+.clear,
+.line,
+.row {
+  clear: both;
+}
+
+/* blocks that must contain floats */
+
+.clearfix:after,
+.line:after,
+.mod:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* table layout */
+
+.row {
+  display: table;
+  table-layout: fixed;
+  width: 100%;
+}
+
+.row > *,
+.col {
+  display: table-cell;
+  vertical-align: top;
+}
+
+/* inline-block */
+
+.inbl {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* alignments (blocks and inline) */
+
+/* ------------------------------ */
+
+/* left elements */
+
+.left {
+  float: left;
+}
+
+img.left {
+  margin-right: 1em;
+}
+
+/* right elements */
+
+.right {
+  float: right;
+}
+
+img.right {
+  margin-left: 1em;
+}
+
+img.left,
+img.right {
+  margin-bottom: 5px;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.txtleft {
+  text-align: left;
+}
+
+.txtright {
+  text-align: right;
+}
+
+.txtcenter {
+  text-align: center;
+}
+
+
+/* ----------------------------- */
+
+/* == iefix                      */
+
+/* ----------------------------- */
+
+/* Make sure you are using Conditional Classes in your HTML */
+
+/* see : http://www.alsacreations.com/astuce/lire/988-classes-conditionnelles-HTML.html */
+
+.ie678 h1,
+.ie678 .h1-like {
+  font-size: 2.2857142857142856em;
+}
+
+.ie678 h2,
+.ie678 .h2-like {
+  font-size: 2em;
+}
+
+.ie678 h3,
+.ie678 .h3-like {
+  font-size: 1.7142857142857142em;
+}
+
+.ie678 h4,
+.ie678 .h4-like {
+  font-size: 1.4285714285714286em;
+}
+
+.ie678 h5,
+.ie678 .h5-like {
+  font-size: 1.2857142857142858em;
+}
+
+.ie678 h6,
+.ie678 .h6-like {
+  font-size: 1.1428571428571428em;
+}
+
+/* hasLayout for IE6/IE7 */
+
+.ie67 .clearfix,
+.ie67 .line,
+.ie67 .mod,
+.ie67 .row,
+.ie67 .col {
+  zoom: 1;
+}
+
+/* inline-block and table-cell for IE6/IE7 */
+
+/* warning: .col needs width on IE6/IE7 */
+
+.ie67 .btn,
+.ie67 .col,
+.ie67 .inbl {
+  display: inline;
+  zoom: 1;
+}
+
+.ie8 img {
+  width: auto;
+  /* @bugfix for IE8 */
+}
+
+/* Active box-sizing for IE6/IE7 */
+
+/* @source https://github.com/Schepp/box-sizing-polyfill */
+
+/*
+.ie67 * {
+	behavior: url(/lib/box-sizing-polyfill/boxsizing.htc);
+}
+*/
+
+/* ----------------------------- */
+
+/* == quick print reset          */
+
+/* ----------------------------- */
+
+@media print {
+  p,
+  blockquote {
+    orphans: 2;
+    widows: 2;
+  }
+
+  blockquote,
+  ul,
+  ol {
+    page-break-inside: avoid;
+  }
+
+  h1,
+  h2,
+  h3,
+  caption {
+    page-break-after: avoid;
+  }
+}
+
+/* debug helper */
+
+.knacss-debug {
+  background: pink;
+  outline: 3px solid maroon;
+}
