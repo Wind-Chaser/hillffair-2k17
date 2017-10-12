@@ -76,7 +76,6 @@ li.clubItems {
 	left: 25%;
 	position: absolute;
 	height: 100%;
-	overflow-x: hidden;
 	text-align: center;
 }
 
@@ -177,6 +176,7 @@ li.clubItems {
 }
 
 .events.outsideRight {
+	visibility: hidden;
 	right: -100%;
 }
 
