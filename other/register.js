@@ -60,38 +60,30 @@
 		}
 
 		if(name === form.name.defaultVal || name.length < 3){
-			form.name.className = "name error";
 			document.getElementsByClassName("warningName")[0].className = "warningName visible";
 			status = false;
 		} else {
-			form.name.className = "name";
 			document.getElementsByClassName("warningName")[0].className = "warningName";
 		}
 
 		if(city === form.city.defaultVal || city.length < 2){
-			form.city.className = "city error";
 			document.getElementsByClassName("warningCity")[0].className = "warningCity visible";
 			status = false;
 		} else {
-			form.city.className = "city";
 			document.getElementsByClassName("warningCity")[0].className = "warningCity";
 		}
 
 		if(college === form.college.defaultVal || college.length < 2){
-			form.college.className = "college error";
 			document.getElementsByClassName("warningCollege")[0].className = "warningCollege visible";
 			status = false;
 		} else {
-			form.college.className = "college";
 			document.getElementsByClassName("warningCollege")[0].className = "warningCollege";
 		}
 
 		if(phone === form.phone.defaultVal || phone.length != 10){
-			form.phone.className = "phone error";
 			document.getElementsByClassName("warningPhone")[0].className = "warningPhone visible";
 			status = false;
 		} else {
-			form.phone.className = "phone";
 			document.getElementsByClassName("warningPhone")[0].className = "warningPhone";
 		}
 
@@ -117,11 +109,9 @@
 		}
 
 		if(!(emailPattern.test(email) && email.indexOf(" ") == -1)){
-			form.email.className = "email error";
 			document.getElementsByClassName("warningEmail")[0].className = "warningEmail visible";
 			status = false;
 		} else {
-			form.email.className = "email";
 			document.getElementsByClassName("warningEmail")[0].className = "warningEmail";
 		}
 
@@ -159,10 +149,25 @@
 				if(xmlhttp.readyState == 4){
 					var res = JSON.parse(xmlhttp.responseText);
 					console.log(res);
+					document.getElementById('male').checked=false;
+					document.getElementById('female').checked=false;
+					document.getElementById('first').checked=false;
+					document.getElementById('second').checked=false;
+					document.getElementById('third').checked=false;
+					document.getElementById('forth').checked=false;
+					document.getElementById('fifth').checked=false;
+					document.getElementById('na').checked=false;
+					document.getElementById('bdance').checked=false;
+					document.getElementById('bbands').checked=false;
+					document.getElementById('nukkadn').checked=false;
+					document.getElementById('fash').checked=false;
 				  document.getElementsByClassName("darkLayer")[0].className = "darkLayer shown";
 					document.getElementsByClassName("notice")[0].className = "notice shown";
 					document.getElementsByClassName("msgNotice")[0].innerHTML = "You Are Now Registed";
 					document.getElementsByClassName("noticeContent")[0].className = "noticeContent shown";
+					//setTimeout(function(){
+					//	window.location="/register";
+					//},400);
 					//grecaptcha.reset();
 				}
 			}
@@ -174,14 +179,18 @@
 			document.getElementsByClassName("noticeContent")[0].className = "noticeContent";
 			document.getElementsByClassName("reg")[0].disabled = false;
 			document.getElementsByClassName("reg")[0].value = "Register";
-			document.getElementsByClassName('name')[0].value="";
-			document.getElementsByClassName('phone')[0].value="";
-			document.getElementsByClassName('city')[0].value="";
-			document.getElementsByClassName('college')[0].value="";
-			document.getElementsByClassName('email')[0].value="";
-			document.getElementsByName("year").value="";
-			document.getElementsByName("gender").value="";
-			document.getElementsByName("events").value="";
+			document.getElementById('name')[0].value="";
+			document.getElementById('phone')[0].value="";
+			document.getElementById('city')[0].value="";
+			document.getElementById('college')[0].value="";
+			document.getElementById('email')[0].value="";
+			document.getElementByName("year").value="";
+			document.getElementByName("gender").value="";
+			document.getElementByName("events").value="";
+
+
+
+
 
 		});
 

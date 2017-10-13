@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather');
 @font-face {
 	font-family: cat;
 	src: url('/fonts/DK The Cats Whiskers.otf');
@@ -18,27 +19,28 @@
 
 html {
 	width: 100%;
-	background-image: url('/images/members.png');
+	background-image: url('./images/dd.jpg');
+	background-size: cover;
 	background-attachment: fixed;
 	height: 100%;
 }
 
 body {
 	width: 100%;
-	min-height: 100%;
+  height: 100%;
 	background-size: 100% 100%;
 	font-size: 16px;
 	text-align: center;
   background-attachment: fixed;
 }
-.menuItem  a{
-	 text-decoration: none;
-	 color: #fff;
-}
 .container {
 	width: 60%;
 	display: inline-block;
 	padding: 30px 20px;
+}
+.date{
+	margin: 15px;
+	color:#ab2ec0;
 }
 
 .heading {
@@ -49,7 +51,7 @@ body {
 .nit {
 	font-family: antipasto;
 	color: rgba(255, 255, 51, 0.8);
-	font-size: 1.3em;
+	font-size: 1.2em;
 	margin-bottom: 10px;
 }
 
@@ -62,13 +64,16 @@ body {
 }
 
 .hillffair {
-	font-size: 3em;
+	font-size: 2.5em;
 	font-weight: bold;
+	color: #544170;
+	font-family: 'Merriweather', serif;
 }
 
 .date {
 	font-size: 1.5em;
-	color: black;
+	color: #544170;
+	font-family: 'Merriweather', serif;
 }
 
 .right {
@@ -98,162 +103,31 @@ body {
 	font-family: antipasto;
 	font-size: 2em;
 	font-weight: 400;
-	color: black;
+	color: #544170;
 	margin-bottom: 10px;
 	margin-top: 10px;
+	font-family: 'Merriweather', serif;
 }
-
-input[type = "text"] {
-	width: 100%;
-	background-color:  blue;
-	border: none;
-	outline: none;
-	font-family: cat;
-	font-size: 1.2em;
-	padding: 8px 20px;
-	-webkit-transition: background-color 0.2s, box-shadow 0.2s;
-	-moz-transition: background-color 0.2s, box-shadow 0.2s;
-	transition: background-color 0.2s, box-shadow 0.2s;
-	margin: 10px 0px;
+.mdl-textfield__label{
+	color:black;
 }
-
-input[type = "text"]:hover {
-	background-color:blue
-	box-shadow: 0px 0px 2px 1px rgba(255, 255, 51, 0.6);
-}
-
-input[type = "text"]:focus {
-	background-color: blue;
-	box-shadow: 0px 0px 2px 1px rgba(255, 255, 51, 0.7);
-}
-
-.divGender {
-    margin-left: 10px;
-		margin-top: 10px;
-		margin-bottom: 10px;
-		clear: both;
-}
-
-input[type = "radio"]{
-	display: none;
-}
-
-label {
-	font-family: cat;
-	font-size: 1.2em;
-	color: blue;
-	margin-right: 40px;
-}
-
-input[type = "radio"] + label:before {
-	content: "";
-	width: 0.7em;
-	height: 0.7em;
-	background-color: blue;
-	display: inline-block;
-	border-radius: 1em;
-	margin-right: 10px;
-	color: #301860;
-	line-height: 0.7em;
-	font-size: 1em;
-	padding: 0px;
-}
-
-label:hover {
-	color: blue;
-}
-
-input[type = "radio"] + label:hover:before {
-	background-color: blue;
-	box-shadow: 0px 0px 0.2em 0.1em rgba(255, 255, 51, 0.6);
-}
-
-input[type = "radio"]:checked + label:before {
-	content: "\25cf";
-	background-color: blue;
-	box-shadow: 0px 0px 0.2em 0.1em rgba(255, 255, 51, 0.7);
-}
-
-input[type = "radio"]:checked + label {
-	color: blue;
-}
-
-.divYear {
-	margin: 10px;
-	margin-bottom:10px;
-	width: 100%;
-	clear: both;
-}
-
-.divYear label {
-	margin-right: 20px;
-}
-
-.divYear input[type = "radio"] + label:before  {
-	margin-right: 5px;
-}
-
 .title {
 	text-align: left;
 	font-family: cat;
-	font-size: 1em;
+	font-size: 1.2em;
 	margin-bottom: 10px;
 }
-
-.titleText {
-	color: blue;
-	text-decoration: none;
+.divYear{
+	 margin-bottom: 10px;
 }
-
-input[type = "checkbox"] {
-	display: none;
-}
-
-input[type = "checkbox"] + label {
-	width: 80%;
-	display: inline-block;
-	text-align: left;
-	padding: 5px 20px;
-}
-
-input[type = "checkbox"] + label:before {
-	width: 0.7em;
-	height: 0.7em;
-	background-color: blue;
-	display: inline-block;
-	content: "";
-	margin-right: 10px;
-	vertical-align: middle;
-	line-height: 0.7em;
-	padding: 0px;
-	color: #301860;
-}
-
-input[type = "checkbox"]:checked + label:before {
-	content: "\2713";
-	background-color: blue;
-}
-
-input[type = "checkbox"]:checked + label {
-	color: blue;
-}
-
-label:hover {
-	color: blue;
-}
-
-input[type = "checkbox"] + label:hover:before {
-	background-color: blue;
-}
-
 input[type = "submit"]{
 	display: inline-block;
-	width: 100%;
+	border: none;
+	width: 98%;
 	padding: 8px 10px;
 	font-family: cat;
 	font-size: 1.2em;
-	border: 2px solid rgba(255, 255, 51, 0.6);
-	background-color: #5bc0de;
+	background-color: #8873a9;
 	color:#fff;
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
@@ -262,13 +136,8 @@ input[type = "submit"]{
 }
 
 input[type = "submit"]:hover {
-	border: 2px solid #483078;
-	background-color: rgba(255, 255, 51, 0.6);
-	color: #483078;
-}
-
-input[type = "text"].error{
-	margin-left: 0px;
+	background-color:#705f8a;
+	color: #fff;
 }
 
 .warningName, .warningEmail, .warningCity, .warningPhone, .warningCollege {
@@ -278,6 +147,9 @@ input[type = "text"].error{
 	font-size: 1.0em;
 	float: left;
 	clear: both;
+}
+.mdl-textfield{
+    width:500px;
 }
 .warningName.visible, .warningEmail.visible, .warningCity.visible, .warningPhone.visible, .warningCollege.visible {
 	display: inline-block;
@@ -420,9 +292,8 @@ input[type = "text"].error{
 
 	.hillffair {
 		font-size: 2em;
-		position: relative;
-		top:0px;
 	}
+
 	.theme {
 		font-size: 2em;
 	}
