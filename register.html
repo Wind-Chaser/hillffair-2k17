@@ -4,8 +4,6 @@
 		<meta name="description" content="Hill&#39;ffair 2K17 : INCEPTIO - REDISCOVERING OUR ROOTS . The annual cultural fest of National Institute of Technology Hamirpur">
 
 	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
-			<meta name="theme-color" content="#714463">
-			<meta name="msapplication-TileColor" content="#714463">
 				<!--
 	    <link rel="stylesheet" type="text/css" href="./Hill&#39;ffair 2k16 - Registration_files/fontello.css">
 	    <link rel="stylesheet" type="text/css" href="./Hill&#39;ffair 2k16 - Registration_files/fontello-codes.css">-->
@@ -28,7 +26,7 @@
 				<form method="POST" action="/adduser">
 				  	<div style="display:flex;flex-direction:column;align-items:flex-start;width:100%;">
 					    <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
-										<input class = "mdl-textfield__input" type = "text" id ="name" name="name">
+										<input class = "mdl-textfield__input" type = "text" id = "name" name="name">
 										<label class = "mdl-textfield__label" for = "name">Name</label>
 					   </div>
 					   <div class="warningName"> Not Valid </div>
@@ -84,67 +82,61 @@
 				 </div>
 				 <div class="warningPhone"> Not Valid </div>
 			 </div>
-						<div class="divYear">
+						<div class="divYear" >
 						<div class="title"> <span class="titleText"> Year you study in :</span><span class="warningYear"> &nbsp;&nbsp;Select a year </span></div>
-						<table>
-	    				<tr>
-					    <td>
+						<div id="year_desktop" >
+						 <div>
 							<label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect" for = "first">
 								 <input type = "radio" id = "first" name = "year" value="1"
 										class = "mdl-radio__button">
 								 <span class = "mdl-radio__label">1st</span>
 							</label>
-					    </td>
-              <td>&nbsp;&nbsp;</td>
-					    <td>
+						</div>
+						<div>
 						   	<label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect"
 								 for = "second">
 								 <input type = "radio" id = "second" name = "year"
 										class = "mdl-radio__button" value="2" >
 								 <span class = "mdl-radio__label">2nd</span>
 						  	</label>
-					   </td>
-						 <td>&nbsp;&nbsp;</td>
-						 <td>
+					   </div>
 							 <label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect"
 								for = "third">
 								<input type = "radio" id = "third" name = "year"
 									 class = "mdl-radio__button" value="3" >
 								<span class = "mdl-radio__label">3rd</span>
 							 </label>
-						</td>
-						<td>&nbsp;&nbsp;</td>
-						<td>
+				   <div>
+					 </div>
 							<label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect"
 							 for = "forth">
 							 <input type = "radio" id = "forth" name = "year"
 									class = "mdl-radio__button" value="4" >
 							 <span class = "mdl-radio__label">4th</span>
 							</label>
-					 </td>
-					 <td>&nbsp;&nbsp;</td>
-					 <td>
+							<div>
+	 					 </div>
 						 <label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect"
 							for = "fifth">
 							<input type = "radio" id = "fifth" name = "year"
 								 class = "mdl-radio__button" value="fifth" >
 							<span class = "mdl-radio__label">5th</span>
 						 </label>
-					</td>
-					<td>&nbsp;&nbsp;</td>
-					<td>
+						 <div>
+						 </div>
 						<label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect"
 						 for = "na">
 						 <input type = "radio" id = "na" name = "year"
 								class = "mdl-radio__button" value="0" >
 						 <span class = "mdl-radio__label">NA</span>
 						</label>
-				 </td>
-						</tr>
-		      </table>
+						<div>
+						</div>
 					</div>
+				</div>
 					<div class="divYear">
 						<div class="title"> <span class="titleText"> Event you wish to participate in :</span><span class="warningEvent"> &nbsp;&nbsp;Select at least one event </span></div>
+
 						<label class = "mdl-checkbox mdl-js-checkbox" for = "bdance">
                   <input type = "checkbox" id = "bdance"
                      class = "mdl-checkbox__input" value="battle of dance" name="events">
