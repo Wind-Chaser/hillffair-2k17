@@ -12,7 +12,7 @@ app.use(express.static(__dirname));
 app.get('/',function (req,res){
   res.sendFile(__dirname+"/index.html");
 });
-app.get('/event',function (req,res){
+app.get('/events',function (req,res){
   res.sendFile(__dirname+"/events.html");
 });
 app.get('/contact',function (req,res){
