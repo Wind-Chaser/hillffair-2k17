@@ -1,6 +1,10 @@
 /*
 	EVENTS BODY
 */
+.menuItem  a{
+	 text-decoration: none;
+	 color: #fff;
+}
 
 .eventsBody {
 	overflow: hidden;
@@ -10,7 +14,7 @@
 
 .eventsBody .left {
 	width: 23%;
-	background-color: rgba(0, 0, 0, 0.8);
+	background-color: #714463;
 	position: absolute;
 	left: 0px;
 	height: 100%;

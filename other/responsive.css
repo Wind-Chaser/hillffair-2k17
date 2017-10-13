@@ -10,15 +10,28 @@
 	.content {
 		display: none;
 	}
-}
 
+}
+@media(min-width:751px){
+	.menu{
+		display: none;
+	}
+	.navIcon{
+		display: none;
+	}
+}
 @media (max-height: 500px) and (min-width: 751px) {
 	.scrollNotice {
 		display: none;
 	}
 }
-
 @media (max-width: 751px){
+	.menu{
+		display: block;
+	}
+	.navIcon{
+		display: block;
+	}
 	.navIcon {
 		width: 30px;
 		right: 20px;
@@ -257,7 +270,8 @@
 	}
 
 	.eventsNotice {
-		margin-top: 20px;
+		margin-top: 80px;
+		font-size: 1em;
 	}
 
 	.cloud {
@@ -317,4 +331,10 @@
 	.intro .logo img {
 		width: 60%;
 	}
-} 
+	.menu{
+		display: block;
+	}
+	.navIcon{
+		display: block;
+	}
+}

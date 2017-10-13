@@ -31,6 +31,10 @@ body {
 	text-align: center;
   background-attachment: fixed;
 }
+.menuItem  a{
+	 text-decoration: none;
+	 color: #fff;
+}
 .container {
 	width: 60%;
 	display: inline-block;
@@ -416,8 +420,9 @@ input[type = "text"].error{
 
 	.hillffair {
 		font-size: 2em;
+		position: relative;
+		top:0px;
 	}
-
 	.theme {
 		font-size: 2em;
 	}

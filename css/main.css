@@ -342,6 +342,7 @@ body {
 	width: 32%;
 	text-align: center;
 	cursor: pointer;
+	text-decoration: none;
 }
 
 .menuItem svg {
