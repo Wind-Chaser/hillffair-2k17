@@ -7,7 +7,7 @@
 	height: 100%;
 	top: 0px;
 	background-image: url(images/contacts.jpg);
-
+ background-size: contain;
 	overflow: hidden;
 }
 .menuItem  a{
