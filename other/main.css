@@ -105,7 +105,7 @@ body {
 .navIcon .line {
 	width: 100%;
 	height: 5px;
-	background-color: #ffffff;
+	background-color: #714463;;
 	margin-bottom: 5px;
 	-webkit-transition: all 0.3s;
 	-moz-transition: all 0.3s;
@@ -162,6 +162,7 @@ body {
 }
 
 .menu.invisible {
+	background-color: #fff;
 	left: -100%;
 }
 

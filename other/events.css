@@ -193,15 +193,31 @@ li.clubItems {
 	left: 20px;
 	top: 20px;
 	font-family: cat;
-	color: black;
+	color: #fff;
 	padding: 10px;
-	border: 1px solid black;
+	background-color: #714463;
 	z-index: 3;
 	border-radius: 5px;
 	display: none;
 	cursor: pointer;
 }
+.eventsBody .clicked1{
+	color:#714463;
+	background-color: #e1dfde;
+}
+.navIcon.notClicked .line {
+	-webkit-transform-origin: 0px 50%;
+	-moz-transform-origin: 0px 50%;
+	transform-origin: 0px 50%;
+}
 
+.navIcon.notClicked:hover .line1 {
+	width: 70%;
+}
+
+.navIcon.notClicked:hover .line3 {
+	width: 70%;
+}
 .eventsNotice {
 	font-family: cat;
 	color: black;
