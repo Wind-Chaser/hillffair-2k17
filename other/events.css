@@ -173,6 +173,7 @@ li.clubItems {
 
 .threeEvents.aEvent {
 	padding: 12.5%;
+	padding-bottom: 4%;
 }
 
 .twoEvents.aEvent {
@@ -238,4 +239,8 @@ li.clubItems {
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	transform: scale(1.2);
+}
+
+.eventDetails{
+	max-width:200px;
 }
