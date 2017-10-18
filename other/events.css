@@ -20,6 +20,7 @@
 	height: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
+
 }
 
 .completeMenu {
@@ -39,6 +40,7 @@ ul {
 	position: absolute;
 	width: 100%;
 	z-index: 10;
+	margin-top:50px;
 }
 
 li.clubItems {
@@ -130,7 +132,7 @@ li.clubItems {
 }
 
 .events2 {
-	padding-top: 5%;
+	padding-top: 0%;
 }
 
 .events3 {
@@ -142,7 +144,7 @@ li.clubItems {
 }
 
 .events5 {
-	padding-top: 8%;
+	padding-top: 0%;
 }
 
 .events6 {
@@ -174,6 +176,7 @@ li.clubItems {
 .threeEvents.aEvent {
 	padding: 12.5%;
 	padding-bottom: 4%;
+	padding-left: 5%;
 }
 
 .twoEvents.aEvent {
@@ -242,5 +245,25 @@ li.clubItems {
 }
 
 .eventDetails{
-	max-width:200px;
+	background-color: #dcdbdc;
+  padding-top:15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	max-width:250px;
+}
+@media screen and (max-width:430px){
+	.events5 {
+		padding-top: 8%;
+	}
+	.threeEvents.aEvent {
+		padding: 12.5%;
+		padding-bottom: 4%;
+	}
+	.events2 {
+		padding-top: 8%;
+	}
+	.events2 .eventDetails{
+		max-width:200px;
+	}
 }

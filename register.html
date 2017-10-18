@@ -40,6 +40,7 @@
 		<div class="container">
 
 			<div class="heading">
+				  <div class="bounce"><img style="width:130px; margin-top:-30px;" src='images/logo.webp'></div>
 					<div class="hillffair rdv-content wow fadeInUp delay-10s animated" style="visibility: visible; animation-name: fadeInUp'"> HILL'FFAIR 2k17 </div>
 					<div class="date  rdv-content wow fadeInUp delay-10s animated" style="visibility: visible; animation-name: fadeInUp;"> 3 - 5th November </div>
 				<div class="formTitle  rdv-content wow fadeInUp delay-10s animated" style="visibility: visible; animation-name: fadeInUp;"> REGISTRATION </div>
@@ -209,3 +210,36 @@ wow = new WOW(
 );
 wow.init();
 </script>
+<style>
+
+.bounce {
+  animation: bounce 2s infinite;
+ -webkit-animation: bounce 2s infinite;
+ -moz-animation: bounce 2s infinite;
+ -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+ 40% {-webkit-transform: translateY(-15px);}
+ 60% {-webkit-transform: translateY(-10px)}
+}
+
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-15px);}
+ 60% {-moz-transform: translateY(-10px);}
+}
+
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-15px);}
+ 60% {-o-transform: translateY(-10px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-15px);}
+ 60% {transform: translateY(-10px);}
+}
+
+</style>

@@ -23,10 +23,9 @@
   <link rel="stylesheet" href="./css/stylehillffair.css" type="text/css">
   <link rel="stylesheet" href="./css/responsive.css" type="text/css">
   <link rel="stylesheet" type="text/css" href="./other/landing.css">
+  <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="stylesheet" type="text/css" href="./other/responsive.css">
-  <link rel="stylesheet" type="text/css" href="./other/main.css">
   <link rel="stylesheet" href="./css/loader.css" type="text/css">
-
 	<!-- JS -->
 	<script type="text/javascript" async="" src="./js/dc.js"></script>
   <script src="./js/jquery.min.js"></script><script type="text/javascript">try {
@@ -113,22 +112,19 @@ window.uabInject = function() {};
     </div>
 </header>
 <div id="loaderme-wrapper">
-      <div id="loaderme"></div>
-      <div class="loaderme-section section-left"></div>
+			<div id="loaderme"></div>
+			<div class="loaderme-section section-left"></div>
       <div class="loaderme-section section-right"></div>
 </div>
 
       <div id="main" class="on">
                 <section class="france" id="france">
                     <article class="mainPicture">
+                      <video id="vedio" autoplay loop>
+                         <source src="movie.mp4" type="video/mp4">
+                      </video>
                         <div class="fadeMainPicture" style="opacity: 0;"></div>
                         <div class="w990px">
-                                  <div class="welcomeTitle wow fadeOutUp delay-20s animated" style="visibility: visible; animation-name: fadeInUp;">
-                                  <h1 >Hill'ffair 2k17</h1>
-                                  <h3 >3-5th November</h3>
-                                  <h2>Rediscover your roots</h2>
-                                </div>
-
                         </div>
                         <div id="illustration_france">
     <div class="cloud fr_cloud-1"></div>
@@ -561,25 +557,22 @@ window.uabInject = function() {};
       			});
       		})
       	</script>
-      	<!--Ticker Terminate-->
-
-
-      	<script type="text/javascript">
-      		$(document).ready(function(e) {
+      	 <script type="text/javascript">
+      		  $(document).ready(function(e) {
       			$('#').scrollToFixed();
       			$('.res-nav_click').click(function(){
       				$('.main-nav').slideToggle();
       				return false
       			});
       		});
-      	</script>
+          setTimeout(function(){
+                $('body').addClass('loadedme');
 
-      	<!--onscroll delay starts-->
-      	<script>
-        setTimeout(function(){
-              $('body').addClass('loadedme');
-              $("#loaderme-wrapper").remove();
-        }, 3000);
+          }, 3000);
+          setTimeout(function(){
+                  $('#loaderme-wrapper').remove();
+          }, 4000);
+
        		wow = new WOW(
       		{
       			animateClass: 'animated',
