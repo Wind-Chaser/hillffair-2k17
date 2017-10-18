@@ -105,7 +105,7 @@
     display: block;
     height:61.42%;
     background-position:50% 0px;
-   // background-image: url(../images/india.jpg);
+    background-image: url(../images/india.jpg);
   }
  .mainPicture2{
     display: none;
