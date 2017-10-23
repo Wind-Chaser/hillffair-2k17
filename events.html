@@ -46,13 +46,11 @@
       </div>
       <div class="left unactive">
           <div class="completeMenu">
-              <div class="spiderWeb pos-1"></div>
-              <div class="eventsMenuSpiderman pos-1"><img src="./Hill&#39;ffair 2K16 _ NIT Hamirpur_files/spiderman_main.gif"></div>
               <div class="eventsMenu">
-                  <ul>
+                  <ul class="bulk">
                     <!--  <li class="clubItems"> Highlights </li>-->
-                      <li class="clubItems"> Core Team </li>
-                      <li class="clubItems"> Battle Day </li>
+                      <li class="clubItems" id="1"> Core Team </li>
+                      <li class="clubItems" id="2"> Battle Day </li>
                       <li class="clubItems"> Dramatics </li>
                       <li class="clubItems"> Music </li>
                       <li class="clubItems"> Dance </li>
@@ -219,6 +217,22 @@ Come and play in pairs, Heads up!  </div>
     <script src="./other/main.js">
     </script>
     <script>
+
+    var selector, elems, makeActive;
+
+  selector = '.bulk li';
+
+  elems = document.querySelectorAll(selector);
+
+  makeActive = function () {
+      for (var i = 0; i < elems.length; i++)
+          elems[i].classList.remove('active');
+
+      this.classList.add('active');
+  };
+
+  for (var i = 0; i < elems.length; i++)
+      elems[i].addEventListener('mousedown', makeActive);
 
 		var metaTagTheme = document.querySelector('meta[name=theme-color]');
 		var body = document.querySelector('body');

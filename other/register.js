@@ -149,22 +149,18 @@
 				if(xmlhttp.readyState == 4){
 					var res = JSON.parse(xmlhttp.responseText);
 					console.log(res);
-					document.getElementById('male').checked=false;
-					document.getElementById('female').checked=false;
-					document.getElementById('first').checked=false;
-					document.getElementById('second').checked=false;
-					document.getElementById('third').checked=false;
-					document.getElementById('forth').checked=false;
-					document.getElementById('fifth').checked=false;
-					document.getElementById('na').checked=false;
-					document.getElementById('bdance').checked=false;
-					document.getElementById('bbands').checked=false;
-					document.getElementById('nukkadn').checked=false;
-					document.getElementById('fash').checked=false;
+					if(res==500){
+					  document.getElementsByClassName("darkLayer")[0].className = "darkLayer shown";
+						document.getElementsByClassName("notice")[0].className = "notice shown";
+						document.getElementsByClassName("msgNotice")[0].innerHTML = "You cannot be Registed";
+						document.getElementsByClassName("noticeContent")[0].className = "noticeContent shown";
+					}
+					else{
 				  document.getElementsByClassName("darkLayer")[0].className = "darkLayer shown";
 					document.getElementsByClassName("notice")[0].className = "notice shown";
 					document.getElementsByClassName("msgNotice")[0].innerHTML = "You Are Now Registed";
 					document.getElementsByClassName("noticeContent")[0].className = "noticeContent shown";
+				}
 					//setTimeout(function(){
 					//	window.location="/register";
 					//},400);
@@ -188,10 +184,18 @@
 			document.getElementByName("gender").value="";
 			document.getElementByName("events").value="";
 
-
-
-
-
+			document.getElementById('male').checked=false;
+			document.getElementById('female').checked=false;
+			document.getElementById('first').checked=false;
+			document.getElementById('second').checked=false;
+			document.getElementById('third').checked=false;
+			document.getElementById('forth').checked=false;
+			document.getElementById('fifth').checked=false;
+			document.getElementById('na').checked=false;
+			document.getElementById('bdance').checked=false;
+			document.getElementById('bbands').checked=false;
+			document.getElementById('nukkadn').checked=false;
+			document.getElementById('fash').checked=false;
 		});
 
 		e.preventDefault();

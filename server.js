@@ -26,8 +26,10 @@ app.post('/adduser',function (req,res){
   var data=req.body;
   var user=new User(data);
   user.save(function(err,user,numAffected){
-  if(err)
-    throw err
+  if(err){
+    console.log(err);
+        res.send('500');
+      }
    if(numAffected){
     console.log("added",user);
     res.send(user);

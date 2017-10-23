@@ -53,7 +53,14 @@ li.clubItems {
 	line-height: 60px;
 	cursor: pointer;
 }
-
+li.clubItems:hover {
+color: #714462;
+background-color: #ecefee;
+}
+li.active {
+color: #714462;
+background-color: #ecefee;
+}
 .eventsMenuSpiderman {
 	position: absolute;
 	height: 70px;
@@ -98,7 +105,9 @@ li.clubItems {
 	font-size: 1.7em;
 	color: white;
 	font-family: cat;
-	border-radius: 10px;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+
 }
 
 .eventType1 {
@@ -251,6 +260,8 @@ li.clubItems {
 	padding-right: 10px;
 	padding-bottom: 15px;
 	max-width:250px;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
 }
 @media screen and (max-width:430px){
 	.events5 {

@@ -310,8 +310,7 @@ blockquote,
 code,
 pre,
 textarea,
-input,
-video {
+input {
   max-width: 100%;
 }
 

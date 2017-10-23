@@ -7,6 +7,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
   <meta name="description" content="This Hillffair, NIT Hamirpur web application supports both offline and online mode, has a splash screen and add to home screen, just like any normal native app">
   <meta name="apple-mobile-web-app-capable" content="yes">
+   <meta name="theme-color" content="#714463">
+    <meta name="msapplication-TileColor" content="#714463">
   <meta name="mobile-web-app-capable" content="yes">
   <meta name="msapplication-TileImage" content="/images/logo.jpg">
   <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
@@ -26,6 +28,19 @@
   <link rel="stylesheet" type="text/css" href="./css/main.css">
   <link rel="stylesheet" type="text/css" href="./other/responsive.css">
   <link rel="stylesheet" href="./css/loader.css" type="text/css">
+  <style type=”text/css”>
+
+  #bgVideo {
+  position: absolute; // Play the video in full screen mode
+  top: 0px;
+  left: 0px;
+  min-width: 100%;
+  min-height: 757px;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+</style>
 	<!-- JS -->
 	<script type="text/javascript" async="" src="./js/dc.js"></script>
   <script src="./js/jquery.min.js"></script><script type="text/javascript">try {
@@ -120,9 +135,28 @@ window.uabInject = function() {};
       <div id="main" class="on">
                 <section class="france" id="france">
                     <article class="mainPicture">
-                      <video id="vedio" autoplay loop>
-                         <source src="movie.mp4" type="video/mp4">
+                      <video id="bgVideo" autoplay loop style=" position: absolute; top: 0px;
+                        left: 0px;
+                        max-width: 100%;
+                        min-height: 780px;
+                        object-fit: fill;
+                        overflow:hidden;
+                        z-index:-1;">
+    <!-- Video is embedded in the WEBM format -->
+                      <source src="images/part2.mp4" type="video/mp4">
                       </video>
+                      <div class="registerpic">
+                       <a href="/register" target="_blank"><img src="images/registerhere.png"style="width:15%;
+                           height:50%;
+                           min-height:53px;
+                           position:absolute;
+                           bottom: 0;
+                           left: 0;
+                           right: 0;
+                           margin: auto;
+                           top:8%;
+                           z-index: 11;"></a>
+                      </div>
                         <div class="fadeMainPicture" style="opacity: 0;"></div>
                         <div class="w990px">
                         </div>
@@ -138,26 +172,22 @@ window.uabInject = function() {};
     <div class="fr_reverbere-2"></div>
   </div>                    </article>
   <article class="mainPicture2">
+    <div class="registerpic">
+     <a href="/register"><img src="images/registerhere.png"style="width:150px;
+         min-height:45px;
+         position:absolute;
+         bottom: 0;
+         left: 2%;
+         right: 0;
+         margin: auto;
+         top:40%;
+         z-index: 11;"></a>
+    </div>
       <div class="fadeMainPicture" style="opacity: 0;"></div>
-      <div class="w990px">
-              <div class="welcomeTitle">
-
-              </div>
-      </div>
-      <div id="illustration_france">
-<div class="cloud fr_cloud-1"></div>
-<div class="cloud fr_cloud-2"></div>
-<div class="cloud fr_cloud-3"></div>
-<div class="fr_city"></div>
-<div class="fr_eiffelTower"></div>
-<div class="fr_reverbere-1"></div>
-<div class="fr_reverbere-1"></div>
-<div class="fr_reverbere-2"></div>
-<div class="fr_reverbere-2"></div>
-</div>                    </article>
+  </article>
   <article class="apropos-1">
       <div class="animationMetro"></div>
-      <div class="w990px">
+      <div class="w990px" style="padding-top:30px">
           <div class="clear"></div>
 <div id="slides_about_me" class="slick-initialized slick-slider">
 <div class="slick-list draggable" tabindex="0"><div class="slick-track" style="opacity: 1; width: 3960px; transform: translate3d(-792px, 0px, 0px);"><div class="slick-slide slick-cloned" style="width:800px;">
@@ -179,7 +209,7 @@ window.uabInject = function() {};
        </ul>
      </div>
       <div class="para-wrap" >
-       <p class="para-content" style="font-size:5em;color:#32282c;text-align:justify;">It is a name which needs no introduction up here in the hills; it is the reason why most of northern India awaits the month of November; it is the name whose mention alone excites the listener to his core. Hill’ffair is around the corner once again!!! And needless to say, it promises to be more extravagant this year than ever before. In the age where fests are in a perennial quest to provide all who bear witness an unforgettable and worth - cherishing experience, Hill’ffair has become synonymous with exhilarating joy and excitement that knows no bounds. </p>
+       <p class="para-content" style="font-size:5em;color:#32282c;text-align:justify;">It is a name which needs no introduction up here in the hills, it is the reason why most of northern India awaits the month of November, it is the name whose mention alone excites the listener to his core.Hill'ffair is the soul of NIT Hamirpur.A soul that is vibrant,contagious and exuberant.Hill’ffair is around the corner once again!!! And needless to say, it promises to be more extravagant this year than ever before. In the age where fests are in a perennial quest to provide all who bear witness an unforgettable and worth - cherishing experience, Hill’ffair has become synonymous with exhilarating joy and excitement that knows no bounds. </p>
      </div>
    </div>
   </section>
@@ -437,7 +467,7 @@ window.uabInject = function() {};
                                                <img src='./images/huntspoint.jpg'>
                                            </div>
                                            <div class="sponsor_company">
-                                               <img src='./images/Kccb.png'>
+                                               <img src='./images/kccb.jpg'>
                                            </div>
                                            <div class="sponsor_company">
                                                <img src='./images/rajratan.jpg'>
@@ -454,7 +484,7 @@ window.uabInject = function() {};
                                 <div class="texte2">
                                     <div class="w990px">
 
-                                        <div   class="social-icons rdv-content wow fadeInUp delay-04s animated" style="visibility: visible; animation-name: fadeInUp;">
+                                        <div  class="social-icons " style="visibility: visible; animation-name: fadeInUp;">
                                             <a href="https://www.facebook.com/hillffair/" target="_blank" title="Hillf'fair Facebook Page">
                                               <div class="icon1">
                                                <img src="../images/facebook.png"></img>
