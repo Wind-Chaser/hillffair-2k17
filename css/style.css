@@ -258,7 +258,8 @@ h1.rotateH1BE > h1 {
 }
 .mainPicture {
     width: 100%;
-    min-height: 780px;
+    height: 780px;
+    overflow: hidden;
     margin: 0px;
     background-position: center 0px;
     background-repeat: no-repeat;
