@@ -145,7 +145,7 @@ input[type = "submit"]:hover {
 	color: #fff;
 }
 
-.warningName, .warningEmail, .warningCity, .warningPhone, .warningCollege {
+.warningName, .warningEmail,.warningNames, .warningCity, .warningPhone, .warningCollege {
 	display: none;
 	color: rgba(255, 0, 0, 0.8);
 	font-family: cat;
@@ -156,7 +156,7 @@ input[type = "submit"]:hover {
 .mdl-textfield{
     width:500px;
 }
-.warningName.visible, .warningEmail.visible, .warningCity.visible, .warningPhone.visible, .warningCollege.visible {
+.warningName.visible,.warningNames.visible, .warningEmail.visible, .warningCity.visible, .warningPhone.visible, .warningCollege.visible {
 	display: inline-block;
 }
 .warningYear, .warningEvent, .warningGender {

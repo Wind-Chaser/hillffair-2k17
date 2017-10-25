@@ -61,11 +61,6 @@ body {
 	background-color: rgba(135, 45, 45, 1);
 }
 
-.content.eventsBody {
-
-	background-image: url(images/dd1.jpg);
-	background-size: 100% 100%;
-}
 .content.active {
 	left: 0px;
 	z-index: 8;

@@ -1,6 +1,7 @@
 /*
 	EVENTS BODY
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 .menuItem  a{
 	 text-decoration: none;
 	 color: #fff;
@@ -20,7 +21,7 @@
 	height: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
-
+  font-family: 'Roboto', sans-serif;
 }
 
 .completeMenu {
@@ -48,7 +49,7 @@ li.clubItems {
 	color: white;
 	font-size: 1.6em;
 	height: 60px;
-	font-family: badaboom;
+
 	text-align: center;
 	line-height: 60px;
 	cursor: pointer;
@@ -104,7 +105,7 @@ background-color: #ecefee;
 	background-color: rgba(0, 0, 0, 0.9);
 	font-size: 1.7em;
 	color: white;
-	font-family: cat;
+  font-family: 'Roboto', sans-serif;
 	border-top-right-radius: 6px;
 	border-top-left-radius: 6px;
 
@@ -205,7 +206,7 @@ background-color: #ecefee;
 	position: fixed;
 	left: 20px;
 	top: 20px;
-	font-family: cat;
+	  font-family: 'Roboto', sans-serif;
 	color: #fff;
 	padding: 10px;
 	background-color: #714463;
@@ -232,7 +233,7 @@ background-color: #ecefee;
 	width: 70%;
 }
 .eventsNotice {
-	font-family: cat;
+  font-family: 'Roboto', sans-serif;
 	color: black;
 	margin-top: 80px;
 	padding: 10px 20px;
@@ -260,8 +261,14 @@ background-color: #ecefee;
 	padding-right: 10px;
 	padding-bottom: 15px;
 	max-width:250px;
+	  font-family: 'Roboto', sans-serif;
 	border-bottom-left-radius: 6px;
 	border-bottom-right-radius: 6px;
+}
+.content.eventsBody {
+
+	background-image: url(images/dd1.jpg);
+	background-size: 100% 100%;
 }
 @media screen and (max-width:430px){
 	.events5 {
@@ -276,5 +283,10 @@ background-color: #ecefee;
 	}
 	.events2 .eventDetails{
 		max-width:200px;
+	}
+	.content.eventsBody {
+
+		background-image: url(images/dd2.jpg);
+		background-size: 100% 100%;
 	}
 }

@@ -25,10 +25,15 @@
 	-webkit-transition: all 0.3s ease-in;
 	-moz-transition: all 0.3s ease-in;
 	transition: all 0.3s ease-in;
-	background-color:#9f8764;
-	opacity: 0.9;
+	background-color: rgba(159,135,100, 0.9);
 	overflow: hidden;
 	box-shadow: 0px 0px 10px 10px rgba(0, 0, 0, 0.4);
+ }
+.img{
+	z-index: 1;
+}
+.info{
+	z-index: 1;
 }
 .contactDetails.outsideTop {
 	opacity: 0;

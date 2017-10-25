@@ -141,25 +141,21 @@ h1 {
 }
 #top-left-fixed-block .subnav > li:nth-child(1) {
       background-color: #322a53;
-      background-image: url(../images/overlay.png);
       background-size: 100% 100%;
       background-repeat: no-repeat;
 }
 #top-left-fixed-block .subnav > li:nth-child(2) {
     background-color:   #aa936b;
-    background-image: url(../images/overlay.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 #top-left-fixed-block .subnav > li:nth-child(3) {
     background-color: #b9a734;
-    background-image: url(../images/overlay.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 #top-left-fixed-block .subnav > li:nth-child(4) {
     background-color: #2d8073;
-    background-image: url(../images/overlay.png);
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
