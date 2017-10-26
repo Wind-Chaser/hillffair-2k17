@@ -247,6 +247,9 @@ input[type = "submit"]:hover {
 	font-family: cat;
 	color: rgba(255, 0, 0, 0.8);
 }
+.mdl-checkbox__label{
+	margin-left: -75%;
+}
 @media (max-width: 1000px) and (min-width: 801px){
 	.container {
 		width: 80%;
@@ -292,7 +295,13 @@ input[type = "submit"]:hover {
 @media (max-width: 500px) {
 	body {
 		font-size: 12px;
-	}
+	}	html {
+			width: 100%;
+			background-image: url('');
+			background-size: cover;
+			background-attachment: fixed;
+			height: 100%;
+		}
 	#year_desktop{
 		display: flex;
 		flex-direction: column;
@@ -330,5 +339,8 @@ input[type = "submit"]:hover {
 	}
 	.divYear input[type="radio"]{
      margin-left: 1px;
+	}
+	.mdl-checkbox__label{
+		margin-left: -50%;
 	}
 }

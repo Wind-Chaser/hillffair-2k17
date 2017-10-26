@@ -259,7 +259,7 @@ h1.rotateH1BE > h1 {
 .mainPicture {
     width: 100%;
     height: 780px;
-    overflow: hidden;
+    overflow:hidden;
     margin: 0px;
     background-position: center 0px;
     background-repeat: no-repeat;

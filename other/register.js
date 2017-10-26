@@ -132,11 +132,11 @@
 
 			var objectToSend = {
 				"name": name,
+				"members": gender,
 				"email": email,
 				"city": city,
 				"college": college,
 				"phone": phone,
-				"gender": gender,
 				"year": year,
 				"events": events
 			};
@@ -153,13 +153,13 @@
 					if(res==500){
 					  document.getElementsByClassName("darkLayer")[0].className = "darkLayer shown";
 						document.getElementsByClassName("notice")[0].className = "notice shown";
-						document.getElementsByClassName("msgNotice")[0].innerHTML = "You cannot be Registed";
+						document.getElementsByClassName("msgNotice")[0].innerHTML = "You cannot be Registered";
 						document.getElementsByClassName("noticeContent")[0].className = "noticeContent shown";
 					}
 					else{
 				  document.getElementsByClassName("darkLayer")[0].className = "darkLayer shown";
 					document.getElementsByClassName("notice")[0].className = "notice shown";
-					document.getElementsByClassName("msgNotice")[0].innerHTML = "You Are Now Registed";
+					document.getElementsByClassName("msgNotice")[0].innerHTML = "You Are Now Registered";
 					document.getElementsByClassName("noticeContent")[0].className = "noticeContent shown";
 				}
 				}
