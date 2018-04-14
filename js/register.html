@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html class="gr__hillffair2k16_herokuapp_com"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title> Hill'ffair 2k17 - Registration </title>
+		<meta name="description" content="Hill&#39;ffair 2K17 : INCEPTIO - REDISCOVERING OUR ROOTS . The annual cultural fest of National Institute of Technology Hamirpur">
+		  <meta name="description" content="This Hillffair, NIT Hamirpur web application supports both offline and online mode, has a splash screen and add to home screen, just like any normal native app">
+
+	    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+			  <link rel="icon" href="./images/logo.jpg">
+				<meta name="theme-color" content="#714463">
+				<meta name="msapplication-TileColor" content="#714463">
+			<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+      <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.purple-deep_purple.min.css" />
+      <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+
+			<link rel="stylesheet" type="text/css" href="./other/main.css">
+<meta name="msapplication-TileImage" content="/images/logo.jpg">
+						<link rel="stylesheet" type="text/css" href="./other/responsive.css">
+			<link rel="stylesheet" type="text/css" href="./other/registerPage.css">
+			<link rel="stylesheet" href="./css/animate.css" type="text/css">
+			<script type="text/javascript" async="" src="./js/wow.js"></script>
+			<script src="./js/jquery.min.js"></script>
+		 	</head>
+	<body data-gr-c-s-loaded="true">
+		<div class="menu invisible" id="yes">
+				<div class="menuItem">
+						<div class="menuItemName inview"> <a href='/'>Home </a> </div>
+				</div>
+				<div class="menuItem">
+						<div class="menuItemName inview"><a href="/events"> Events </a> </div>
+				</div>
+				<div class="menuItem">
+						<div class="menuItemName inview"><a href='/contact'> Contact Us</a></div>
+				</div>
+				<div class="menuItem">
+						<div class="menuItemName inview"><a href="/register"> Register </a></div>
+				</div>
+		</div>
+		<div class="navIcon notClicked">
+				<div class="line line1"> </div>
+				<div class="line line2"> </div>
+				<div class="line line3"> </div>
+		</div>
+		<div class="container">
+
+			<div class="heading">
+				  <div class="bounce"><img style="width:130px; margin-top:-30px;" src='images/logo2k17.png'></div>
+					<div class="hillffair rdv-content wow fadeInUp delay-10s animated" style="visibility: visible; animation-name: fadeInUp'"> HILL'FFAIR 2k17 </div>
+					<div class="date  rdv-content wow fadeInUp delay-10s animated" style="visibility: visible; animation-name: fadeInUp;"> 3 - 5th November </div>
+				<div class="formTitle  rdv-content wow fadeInUp delay-10s animated" style="visibility: visible; animation-name: fadeInUp;"> REGISTRATION </div>
+			</div>
+			<div class="formCont">
+				<form method="POST" action="/adduser">
+				  	<div style="display:flex;flex-direction:column;align-items:flex-start;width:100%;">
+					    <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+										<input class = "mdl-textfield__input" type = "text" id = "name" name="name">
+										<label class = "mdl-textfield__label" for = "name">Name of the team</label>
+					   </div>
+					   <div class="warningName"> Not Valid </div>
+				   </div>
+					 <div style="display:flex;flex-direction:column;align-items:flex-start">
+						<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+									<input class = "mdl-textfield__input" type = "text" id = "gender" name="gender">
+									<label class = "mdl-textfield__label" for = "gender">Enter the names of members</label>
+					 </div>
+					 <div class="warningGender"> Not Valid </div>
+				 </div>
+			    	<div style="display:flex;flex-direction:column; align-items:flex-start;">
+				       <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+									<input class = "mdl-textfield__input" type = "text" id = "email" name="email">
+									<label class = "mdl-textfield__label" for = "email">Email</label>
+			       	</div>
+				      <div class="warningEmail"> Not Valid </div>
+			    </div>
+										<div style="display:flex;flex-direction:column;align-items:flex-start">
+						<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+									<input class = "mdl-textfield__input" type = "text" id = "city"name="city">
+									<label class = "mdl-textfield__label" for = "city">City</label>
+					 </div>
+					 <div class="warningCity"> Not Valid </div>
+				 </div>
+					<div style="display:flex;flex-direction:column; align-items:flex-start;">
+						 <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class = "mdl-textfield__input" type = "text" id = "college" name="college">
+								<label class = "mdl-textfield__label" for = "college">College(Enter NA if not applicable)</label>
+						</div>
+						<div class="warningCollege"> Not Valid </div>
+				</div>
+				<div style="display:flex;flex-direction:column;align-items:flex-start">
+					<div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+								<input class = "mdl-textfield__input" type = "text" id = "phone" name="phone">
+								<label class = "mdl-textfield__label" for = "phone">Phone</label>
+				 </div>
+				 <div class="warningPhone"> Not Valid </div>
+			 </div>
+									<div class="divYear" >
+						<div class="title"> <span class="titleText"> Year you study in :</span><span class="warningYear"> &nbsp;&nbsp;Select a year </span></div>
+						<div id="year_desktop" >
+						 <div>
+							<label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect" for = "first">
+								 <input type = "radio" id = "first" name = "year" value="1"
+										class = "mdl-radio__button">
+								 <span class = "mdl-radio__label">1st</span>
+							</label>
+						</div>
+						<div>
+						   	<label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect"
+								 for = "second">
+								 <input type = "radio" id = "second" name = "year"
+										class = "mdl-radio__button" value="2" >
+								 <span class = "mdl-radio__label">2nd</span>
+						  	</label>
+					   </div>
+							 <label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect"
+								for = "third">
+								<input type = "radio" id = "third" name = "year"
+									 class = "mdl-radio__button" value="3" >
+								<span class = "mdl-radio__label">3rd</span>
+							 </label>
+				   <div>
+					 </div>
+							<label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect"
+							 for = "forth">
+							 <input type = "radio" id = "forth" name = "year"
+									class = "mdl-radio__button" value="4" >
+							 <span class = "mdl-radio__label">4th</span>
+							</label>
+							<div>
+	 					 </div>
+						 <label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect"
+							for = "fifth">
+							<input type = "radio" id = "fifth" name = "year"
+								 class = "mdl-radio__button" value="fifth" >
+							<span class = "mdl-radio__label">5th</span>
+						 </label>
+						 <div>
+						 </div>
+						<label class = "mdl-radio mdl-js-radio mdl-js-ripple-effect"
+						 for = "na">
+						 <input type = "radio" id = "na" name = "year"
+								class = "mdl-radio__button" value="0" >
+						 <span class = "mdl-radio__label">NA</span>
+						</label>
+						<div>
+						</div>
+					</div>
+				</div>
+					<div class="divYear">
+						<div class="title"> <span class="titleText"> Event you wish to participate in :</span><span class="warningEvent"> &nbsp;&nbsp;Select at least one event </span></div>
+
+						<label class = "mdl-checkbox mdl-js-checkbox" for = "bdance">
+                  <input type = "checkbox" id = "bdance"
+                     class = "mdl-checkbox__input" value="battle of dance" name="events">
+                  <span class = "mdl-checkbox__label">Battle of Dance</span>
+            </label>
+						<label class = "mdl-checkbox mdl-js-checkbox" for = "bbands">
+                  <input type = "checkbox" id = "bbands"
+                     class = "mdl-checkbox__input" value="battle of bands" name="events">
+                  <span class = "mdl-checkbox__label">Battle of Bands</span>
+            </label>
+						<label class = "mdl-checkbox mdl-js-checkbox" for = "nukkadn">
+                  <input type = "checkbox" id = "nukkadn"
+                     class = "mdl-checkbox__input" value="battle of drama" name="events">
+                  <span class = "mdl-checkbox__label">Battle of Fash</span>
+            </label>
+						<label class = "mdl-checkbox mdl-js-checkbox" for = "fash">
+                  <input type = "checkbox" id = "fash"
+                     class = "mdl-checkbox__input" value="battle of fash" name="events">
+                  <span class = "mdl-checkbox__label">Nukad-Natak</span>
+            </label>
+					</div>
+					<input type="submit" value="Register" class="reg">
+				</form>
+			</div>
+		</div>
+		<div class="darkLayer"> </div>
+		<div class="notice">
+			<div class="noticeContent"> <span class="msgNotice">Hey you will get a notice here ! </span><button class="cross"> X </button></div>
+		</div>
+		<script type="text/javascript" async="" src="./Hill&#39;ffair 2k16 - Registration_files/recaptcha__en.js"></script><script src="./Hill&#39;ffair 2k16 - Registration_files/api.js"></script>
+		<script src="./other/register.js"> </script>
+		<script src="./other/snackbar.js"></script>
+			 <script src="./other/pageTransition.js">
+			 </script>
+			 <script src="./other/skrollr.min.js"></script>
+			 <script src="./other/enquire.min.js"></script>
+			 <script src="./other/menu.js">
+			 </script>
+			 <script src="./other/main.js">
+			 </script>
+</body></html>
+<script>
+wow = new WOW(
+{
+	animateClass: 'animated',
+	offset:       100
+}
+);
+wow.init();
+</script>
+<style>
+
+.bounce {
+  animation: bounce 2s infinite;
+ -webkit-animation: bounce 2s infinite;
+ -moz-animation: bounce 2s infinite;
+ -o-animation: bounce 2s infinite;
+}
+
+@-webkit-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-webkit-transform: translateY(0);}
+ 40% {-webkit-transform: translateY(-15px);}
+ 60% {-webkit-transform: translateY(-10px)}
+}
+
+@-moz-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-moz-transform: translateY(0);}
+ 40% {-moz-transform: translateY(-15px);}
+ 60% {-moz-transform: translateY(-10px);}
+}
+
+@-o-keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {-o-transform: translateY(0);}
+ 40% {-o-transform: translateY(-15px);}
+ 60% {-o-transform: translateY(-10px);}
+}
+@keyframes bounce {
+ 0%, 20%, 50%, 80%, 100% {transform: translateY(0);}
+ 40% {transform: translateY(-15px);}
+ 60% {transform: translateY(-10px);}
+}
+
+</style>

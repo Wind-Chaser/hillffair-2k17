@@ -1,6 +1,7 @@
 /*
 	EVENTS BODY
 */
+@import url('https://fonts.googleapis.com/css?family=Roboto');
 .menuItem  a{
 	 text-decoration: none;
 	 color: #fff;
@@ -20,6 +21,7 @@
 	height: 100%;
 	overflow-y: auto;
 	overflow-x: hidden;
+  font-family: 'Roboto', sans-serif;
 }
 
 .completeMenu {
@@ -39,6 +41,7 @@ ul {
 	position: absolute;
 	width: 100%;
 	z-index: 10;
+	margin-top:50px;
 }
 
 li.clubItems {
@@ -46,12 +49,19 @@ li.clubItems {
 	color: white;
 	font-size: 1.6em;
 	height: 60px;
-	font-family: badaboom;
+
 	text-align: center;
 	line-height: 60px;
 	cursor: pointer;
 }
-
+li.clubItems:hover {
+color: #714462;
+background-color: #ecefee;
+}
+li.active {
+color: #714462;
+background-color: #ecefee;
+}
 .eventsMenuSpiderman {
 	position: absolute;
 	height: 70px;
@@ -95,8 +105,10 @@ li.clubItems {
 	background-color: rgba(0, 0, 0, 0.9);
 	font-size: 1.7em;
 	color: white;
-	font-family: cat;
-	border-radius: 10px;
+  font-family: 'Roboto', sans-serif;
+	border-top-right-radius: 6px;
+	border-top-left-radius: 6px;
+
 }
 
 .eventType1 {
@@ -130,7 +142,7 @@ li.clubItems {
 }
 
 .events2 {
-	padding-top: 5%;
+	padding-top: 0%;
 }
 
 .events3 {
@@ -142,7 +154,7 @@ li.clubItems {
 }
 
 .events5 {
-	padding-top: 8%;
+	padding-top: 0%;
 }
 
 .events6 {
@@ -150,7 +162,7 @@ li.clubItems {
 }
 
 .events7 {
-	padding-top: 0%;
+	padding-top: 8%;
 }
 
 .events8 {
@@ -173,6 +185,8 @@ li.clubItems {
 
 .threeEvents.aEvent {
 	padding: 12.5%;
+	padding-bottom: 4%;
+	padding-left: 5%;
 }
 
 .twoEvents.aEvent {
@@ -192,7 +206,7 @@ li.clubItems {
 	position: fixed;
 	left: 20px;
 	top: 20px;
-	font-family: cat;
+	  font-family: 'Roboto', sans-serif;
 	color: #fff;
 	padding: 10px;
 	background-color: #714463;
@@ -219,7 +233,7 @@ li.clubItems {
 	width: 70%;
 }
 .eventsNotice {
-	font-family: cat;
+  font-family: 'Roboto', sans-serif;
 	color: black;
 	margin-top: 80px;
 	padding: 10px 20px;
@@ -238,4 +252,41 @@ li.clubItems {
 	-webkit-transform: scale(1.2);
 	-moz-transform: scale(1.2);
 	transform: scale(1.2);
+}
+
+.eventDetails{
+	background-color: #dcdbdc;
+  padding-top:15px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 15px;
+	max-width:250px;
+	  font-family: 'Roboto', sans-serif;
+	border-bottom-left-radius: 6px;
+	border-bottom-right-radius: 6px;
+}
+.content.eventsBody {
+
+	background-image: url(images/dd1.jpg);
+	background-size: 100% 100%;
+}
+@media screen and (max-width:430px){
+	.events5 {
+		padding-top: 8%;
+	}
+	.threeEvents.aEvent {
+		padding: 12.5%;
+		padding-bottom: 4%;
+	}
+	.events2 {
+		padding-top: 8%;
+	}
+	.events2 .eventDetails{
+		max-width:200px;
+	}
+	.content.eventsBody {
+
+		background-image: url(images/dd2.jpg);
+		background-size: 100% 100%;
+	}
 }

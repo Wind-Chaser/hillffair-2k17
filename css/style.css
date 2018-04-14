@@ -3,7 +3,7 @@
 /*OSWALD GOOGLE FONT*/
 
 @import url('http://fonts.googleapis.com/css?family=Oswald:400,300,700');
-
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 /*
 font-family: 'Oswald', sans-serif;
 COLORS
@@ -14,57 +14,15 @@ fuschia : ca0a60
 */
 
 html, body {
+   width: 100%;
     height: 100%;
 }
 body {
+  width: 100%;
     background-color: #dcdbdc;
     /*overflow-x: hidden;*/
 }
-#awwwards {
-    position: fixed;
-    width: 126px;
-    height: 126px;
-    text-indent: -666em;
-    overflow: hidden;
-    z-index: 99999;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease;
-}
-#awwwards.top {
-    top: 0;
-}
-#awwwards.right {
-    right: 0;
-}
-#awwwards a {
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    width: 126px;
-    height: 126px;
-    background-repeat: no-repeat;
-    background-position: 4px -23px;
-    background-size: 145px 145px;
-}
-#awwwards.top.left a {
-    -webkit-transform: rotate(-90deg);
-    transform: rotate(-90deg);
-}
-/* NOMINEE */
 
-#awwwards.honorable.black a {
-    background-image: url(../WD_IMAGES/awwwards_honorable_black.png);
-}
-#awwwards.nominee.black a {
-    background-image: url(../WD_IMAGES/awwwards_nominee_black.png);
-}
-@media only screen and (-Webkit-min-device-pixel-ratio: 1.5), only screen and (-moz-min-device-pixel-ratio: 1.5), only screen and (-o-min-device-pixel-ratio: 3/2), only screen and (min-device-pixel-ratio: 1.5) {
-    /* NOMINEE */
-    #awwwards.nominee.black a {
-        background-image: url(../WD_IMAGES/awwwards_nominee_black@2x.png);
-    }
-}
 img {
     image-rendering: optimizeQuality;
     -webkit-image-rendering: optimizeQuality;
@@ -86,144 +44,12 @@ h1 {
     color: #dcdbdc;
     margin: 0px auto;
 }
-/*PRELOAD*/
-
-#preload {
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    left: 0;
-    top: 0;
-    z-index: 1000;
-    overflow: hidden;
-    opacity: 1;
-}
-#preload > div {
-    position: absolute;
-    left: -50%;
-    background-color: #714764;
-    width: 200%;
-    height: 50%;
-}
-#preload > div.upper,#preload > div.lower {
-    -webkit-transition: all 1400ms cubic-bezier(0.200, 0.985, 0.640, 0.940);
-    -moz-transition: all 1400ms cubic-bezier(0.200, 0.985, 0.640, 0.940);
-    -o-transition: all 1400ms cubic-bezier(0.200, 0.985, 0.640, 0.940);
-    transition: all 1400ms cubic-bezier(0.200, 0.985, 0.640, 0.940);
-}
-#preload > div.upper {
-    top: 0;
-    -webkit-transform-origin: center top;
-    -moz-transform-origin: center top;
-    -ms-transform-origin: center top;
-    -o-transform-origin: center top;
-    transform-origin: center top;
-
-}
-#preload > div.lower {
-    bottom: 0;
-    /*background-image: url(../WD_IMAGES/GLOBAL/supported-browser.png);*/
-    background-position: center 95%;
-    background-repeat: no-repeat;
-    -webkit-transform-origin: center bottom;
-    -moz-transform-origin: center bottom;
-    -ms-transform-origin: center bottom;
-    -o-transform-origin: center bottom;
-    transform-origin: center bottom;
-    opacity: 1;
-}
-#preload > div.upper.on {
-    top: -95%;
-    -webkit-transform: rotate(25deg);
-    -ms-transform: rotate(25deg);
-    -o-transform: rotate(25deg);
-    transform: rotate(25deg);
-}
-#preload > div.lower.on {
-    bottom: -95%;
-    -webkit-transform: rotate(25deg);
-    -ms-transform: rotate(25deg);
-    -o-transform: rotate(25deg);
-    transform: rotate(25deg);
-}
-#preload > .stroke {
-    width: 0%;
-    height: 1px;
-    background-color: #DCDADC;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    z-index: 10;
-    margin: auto;
-    opacity: 0.2;
-    -webkit-transform-origin: center center;
-    -moz-transform-origin: center center;
-    -ms-transform-origin: center center;
-    -o-transform-origin: center center;
-    transform-origin: center center;
-    -webkit-transition: all 400ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    -moz-transition: all 400ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    -o-transition: all 400ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    transition: all 400ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-}
-#preload > .stroke.on {
-    width: 15%;
-}
-#preload > .stroke.on2 {
-    width: 100%;
-}
-#preload > .stroke.on3 {
-   opacity: 0;
-}
-#preload > img {
-    width: 250px;
-    height: 150px;
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    opacity: 0;
-    -webkit-transition: all 1200ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    -moz-transition: all 1200ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    -o-transition: all 1200ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    transition: all 1200ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-}
-#preload > img.on {
-    opacity: 0.9;
-}
-#preload > .countdown {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: 14px;
-    font-size: 1.4rem;
-    letter-spacing: 0.05em;
-    text-align: center;
-    color: #DCDADC;
-    position: absolute;
-    width: 100%;
-    top: 60%;
-    left: 0%;
-    opacity: 0;
-    -webkit-transition: all 1200ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    -moz-transition: all 1200ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    -o-transition: all 1200ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-    transition: all 1200ms cubic-bezier(0.860, 0.000, 0.070, 1.000);
-}
-#preload > .countdown.on {
-    top: 62%;
-    opacity: 0.85;
-}
 /*MAIN CONTAINER*/
-
 #main {
+    width: 100%;
     height: 100%;
     margin: 0 auto;
   /*  min-width: 990px;*/
-    width: 100%;
     position: relative;
     z-index: 5;
 }
@@ -248,7 +74,7 @@ h1 {
 }
 #top-left-fixed-block .logo {
     padding: 15px;
-    background-color: #1d1d1d;
+    background-color: #714462;
 }
 #top-left-fixed-block .logo img {
     opacity: 0;
@@ -261,7 +87,7 @@ h1 {
     opacity: 1;
 }
 #top-left-fixed-block .navButton {
-    background-color: #ca0a60;
+    background-color: #714462;
     width: 50px;
     height: 30px;
     padding-top:3px;
@@ -314,26 +140,22 @@ h1 {
     left: 0;
 }
 #top-left-fixed-block .subnav > li:nth-child(1) {
-      background-color: #f88a17;
-      background-image: url(../images/overlay.png);
+      background-color: #322a53;
       background-size: 100% 100%;
       background-repeat: no-repeat;
 }
 #top-left-fixed-block .subnav > li:nth-child(2) {
-    background-color:   #ef4784;
-    background-image: url(../images/overlay.png);
+    background-color:   #aa936b;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 #top-left-fixed-block .subnav > li:nth-child(3) {
-    background-color: #3f8093;
-    background-image: url(../images/overlay.png);
+    background-color: #b9a734;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
 #top-left-fixed-block .subnav > li:nth-child(4) {
-    background-color: ##4fa402;
-    background-image: url(../images/overlay.png);
+    background-color: #2d8073;
     background-size: 100% 100%;
     background-repeat: no-repeat;
 }
@@ -407,10 +229,6 @@ section {
     margin: 0 auto;
     padding: 50px 0;
     position: relative;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    font-size: 13px;
-    font-size: 1.3rem;
 }
 .w990px .perspectiveH1 {
     -webkit-perspective: 400px;
@@ -439,8 +257,10 @@ h1.rotateH1BE > h1 {
     color: #3f8093;
 }
 .mainPicture {
-    min-height: 800px;
-    margin: 0 auto;
+    width: 100%;
+    height: 780px;
+    overflow:hidden;
+    margin: 0px;
     background-position: center 0px;
     background-repeat: no-repeat;
 /*     -webkit-background-size: cover;
@@ -481,37 +301,12 @@ background-size: cover; */
     -webkit-background-size: cover;
     background-size: cover;
 }
-/*FRANCE - LUXEMBOURG - BELGIQUE SLIDES*/
-
-.welcomeTitle div {
-    color: #5a5a5e;
-    font-size: 12px;
-    font-size: 1.2rem;
-    letter-spacing: 0.2rem;
-    text-align: center;
-    text-transform: uppercase;
-}
-.welcomeTitle > .scrollDown {
-    width: 50px;
-    height: 50px;
-    background-image: url(../WD_IMAGES/GLOBAL/scrollDown.gif), url(../WD_IMAGES/GLOBAL/scrollDownHover.gif);
-    background-position: 0 0, 0 -50px;
-    background-repeat: no-repeat;
-    background-color: #EC0462;
-    margin: 30px auto;
-    -webkit-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-    -moz-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-    -o-transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-    transition: all 500ms cubic-bezier(0.680, -0.550, 0.265, 1.550);
-}
-.welcomeTitle > .scrollDown.on {
-    background-position: 0 50px, 0 0;
-}
-#illustration_france, #illustration_luxembourg, #illustration_belgique {
+/*FRANCE SLIDES*/
+#illustration_france {
     width: 590px;
     min-height: 350px;
     position: absolute;
-    bottom: 0;
+    bottom: 0px;
     left: 50%;
     margin-left: -295px;
     -webkit-perspective: 500px;
@@ -520,7 +315,7 @@ background-size: cover; */
     perspective: 500px;
     z-index: 10;
 }
-#illustration_france > *:not(.country_name), #illustration_luxembourg > *:not(.country_name), #illustration_belgique > *:not(.country_name) {
+#illustration_france > *:not(.country_name) {
     background-position: center center;
     background-repeat: no-repeat;
     -webkit-transform-origin: center bottom;
@@ -543,15 +338,15 @@ background-size: cover; */
 .fr_cloud-1 {
     width: 141px;
     height: 82px;
-    top: 5%;
-    left: 60%;
+    top: 8%;
+    left: 63%;
     background-image: url(../images/cloud1.png);
 }
 .fr_cloud-2 {
     width: 82px;
     height: 48px;
-    top: 20%;
-    left: 30%;
+    top: 19%;
+    left: 24%;
     background-image: url(../images/cloud2.png);
 }
 .fr_cloud-3 {
@@ -627,157 +422,11 @@ background-size: cover; */
     width: 100%;
     padding: 50px;
 }
-/*LUXEMBOURG*/
 
-.lu_cloud-1 {
-    width: 78px;
-    height: 45px;
-    top: 20%;
-    left: 50%;
-    background-image: url(../images/luxembourg-shape-nuage1.png);
-}
-.lu_cloud-2 {
-    width: 40px;
-    height: 23px;
-    top: 40%;
-    left: 75%;
-    background-image: url(../images/luxembourg-shape-nuage2.png);
-}
-.lu_cloud-3 {
-    width: 28px;
-    height: 16px;
-    top: 40%;
-    left: 45%;
-    background-image: url(../images/luxembourg-shape-nuage3.png);
-}
-.lu_eglise {
-    background-image: url(../images/luxembourg-shape-eglise.png);
-    bottom: 33% !important;
-    height: 104px;
-    left: 50%;
-    margin-left: 25px;
-    width: 122px;
-}
-.lu_pont {
-    width: 342px;
-    height: 120px;
-    left: 50%;
-    margin-left: -171px;
-    background-image: url(../WD_IMAGES/_LUXEMBOURG/luxembourg-shape-pont.png);
-}
-.lu_feuillage {
-    width: 586px;
-    height: 158px;
-    background-image: url(../WD_IMAGES/_LUXEMBOURG/luxembourg-shape-feuillages.png);
-    left: 50%;
-    margin-left: -292px;
-}
-.lu_titre {
-    color: #DDDCDD;
-    font-family: 'Oswald', sans-serif;
-    font-size: 17px;
-    font-size: 1.7rem;
-    font-weight: 300;
-    bottom: 42%;
-}
-/*BELGIQUE*/
-
-.be_cloud-1 {
-    width: 90px;
-    height: 52px;
-    top: 30%;
-    left: 20%;
-    background-image: url(../WD_IMAGES/_BELGIQUE/belgique-shape-nuage1.png);
-}
-.be_cloud-2 {
-    width: 63px;
-    height: 36px;
-    top: 35%;
-    left: 65%;
-    background-image: url(../WD_IMAGES/_BELGIQUE/belgique-shape-nuage2.png);
-}
-.be_cloud-3 {
-    width: 38px;
-    height: 22px;
-    top: 30%;
-    left: 55%;
-    background-image: url(../WD_IMAGES/_BELGIQUE/belgique-shape-nuage3.png);
-}
-.be_atomium {
-    width: 182px;
-    height: 196px;
-    left: 50%;
-    margin-left: -91px;
-    margin-bottom: -1px;
-    background-image: url(../WD_IMAGES/_BELGIQUE/belgique-shape-atomium.png);
-}
-.be_arbre-1 {
-    width: 53px;
-    height: 59px;
-    background-image: url(../WD_IMAGES/_BELGIQUE/belgique-shape-arbre1.png);
-    left: 28%;
-    margin-left: -26px;
-}
-.be_arbre-1:nth-child(odd) {
-    left: 72%
-}
-.be_arbre-2 {
-    width: 81px;
-    height: 90px;
-    background-image: url(../WD_IMAGES/_BELGIQUE/belgique-shape-arbre2.png);
-    left: 15%;
-    margin-left: -40px;
-}
-.be_arbre-2:nth-child(odd) {
-    left: 85%
-}
-.be_titre {
-    color: #DDDCDD;
-    font-family: 'Oswald', sans-serif;
-    font-size: 17px;
-    font-size: 1.7rem;
-    font-weight: 300;
-    bottom: 28%;
-}
-/*GLOBAL ILLUS*/
-
-.country_name {
-    position: absolute;
-    opacity: 0;
-    left: 25%
-}
 /*ARTICLES*/
 
 /* FRANCE */
 
-.stickers_next {
-    background-color: #7B7B7B;
-    padding: 10px 30px;
-    position: absolute;
-    right: -7%;
-    top: 195px;
-    width: auto;
-    -webkit-transform: scale(0);
-    -moz-transform: scale(0);
-    -ms-transform: scale(0);
-    -o-transform: scale(0);
-    transform: scale(0);
-}
-.stickers_next > div {
-    color: #dcdbdc;
-    font-family: 'Oswald', sans-serif;
-    font-size: 17px;
-    font-size: 1.7rem;
-    font-weight: 300;
-    text-transform: uppercase;
-}
-.stickers_next > div.triangle {
-    width: 40px;
-    height: 40px;
-    position: absolute;
-    bottom: -30px;
-    left: 5px;
-}
 #slides_about_me {
     width: 100%;
     margin-bottom: 100px;
@@ -811,111 +460,7 @@ background-size: cover; */
     width: 100%;
     margin-bottom: 20px;
 }
-#slides_about_me .skills_circles {
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    flex-direction: row;
-    -webkit-flex-direction: row;
-    justify-content: center;
-    -webkit-justify-content: center;
-    align-items: center;
-    -webkit-align-items: center;
-    /* flex-direction: column; RESPONSIVE */
-    padding: 0 10px;
-}
-@-webkit-keyframes animCircle {
-    to {
-        stroke-dashoffset: 520px
-    }
-}
-@-o-keyframes animCircle {
-    to {
-        stroke-dashoffset: 520px
-    }
-}
-@-moz-keyframes animCircle {
-    to {
-        stroke-dashoffset: 520px
-    }
-}
-@keyframes animCircle {
-    to {
-        stroke-dashoffset: 520px
-    }
-}
-#slides_about_me .skills_softwares {
-    width: 600px;
-    height: 230px;
-    margin: 0 auto;
-    position: relative;
-}
-#slides_about_me .skills_softwares > .row {
-    width: 100%;
-    height: 1px;
-    background-color: #8b8b8b;
-    position: absolute;
-    top: 0px;
-    opacity: 0;
-}
-#slides_about_me .skills_softwares > .columns {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: -webkit-flex;
-    display: -moz-flex;
-    display: -ms-flex;
-    display: -o-flex;
-    display: flex;
-    justify-content: center;
-    -webkit-justify-content: center;
-    align-items: stretch;
-    -webkit-align-items: stretch;
-}
-#slides_about_me .skills_softwares > .columns > .col {
-    /* background-color: #fff; */
-    width: 100px;
-    height: 230px;
-    text-align: center;
-    position: relative;
-    display: block;
-}
-#slides_about_me .skills_softwares > .columns > .col > div {
-    width: 25px;
-    height: 0;
-    margin-left: 40px;
-    background-color: #ca0a60;
-    position: absolute;
-    bottom: 50px;
-}
-#slides_about_me .skills_softwares > .columns > .col > h1 {
-    font-size: 16px;
-    font-size: 1.6rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 300;
-    text-transform: uppercase;
-    color: #704663;
-    text-align: center;
-    margin: 0;
-    margin-bottom: -10px;
-    padding: 0;
-    position: absolute;
-    width: 100%;
-    bottom: 0px;
-    opacity: 0;
-}
-#slides_about_me .skills_circles + p {
-    font-size: 1.5rem;
-    font-family: 'Oswald', sans-serif;
-    font-weight:300;
-    color: #776772;
-    text-align: center;
-    opacity:1;
-    margin-top: 65px;
-    letter-spacing: 0.1rem;
-}
+
 #interests_about_me {
     width: 600px;
     margin: 0 auto;
@@ -933,7 +478,7 @@ background-size: cover; */
 #interests_about_me > div {
     width: 145px;
     height: 145px;
-    background-color: #d5d2d4;
+    background-color: #dcdbdc;
     margin-bottom: 5px;
     margin-right: 5px;
     overflow: hidden;
@@ -948,7 +493,14 @@ background-size: cover; */
     background-position: 0 0;
 }
 #interests_about_me > div > .fillBg {
-    background-color: #ca0a60;
+    background-color: #83113a;
+    color:#fff;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    text-transform: capitalize;
+    font-size: 14px;
+    line-height: 0.8em;
     width: 100%;
     height: 0;
 }
@@ -985,19 +537,7 @@ background-size: cover; */
 #france .mainPicture {
     background-color: #DCDBDC;
 }
-#france .welcomeTitle {
-    padding-top: 110px;
-}
-#france .welcomeTitle > h1 {
-    color: #704663;
-    font-size: 38px;
-    font-size: 3.8rem;
-    letter-spacing: 3.6rem;
-    margin: 0 auto;
-    width: 100%;
-    text-align: center;
-    margin-left: 10px;
-}
+
 /*LUXEMBOURG MIDDLE*/
 
 #luxembourg .mainPicture {
@@ -1007,38 +547,12 @@ background-size: cover; */
 #luxembourg .separator {
     margin-top: -80px;
 }
-#luxembourg .welcomeTitle {
-    width: 100%;
-    position: absolute;
-    text-align: center;
-    bottom: 40%;
-    left: 0;
-}
-#luxembourg .welcomeTitle > h1 {
-    color: #f6ede0;
-    font-size: 23px;
-    font-size: 2.3rem;
-    letter-spacing: 0.6rem;
-    margin: 0 auto;
-    text-align: center;
-    width: 574px;
-}
-/*#luxembourg .gelfra-illustration {
-     position: absolute;
-   left: 15%;
-   bottom: -20%;
-   -webkit-transform: scale(1);
-   -moz-transform: scale(1);
-   -ms-transform: scale(1);
-   -o-transform: scale(1);
-   transform: scale(1);
-}*/
 
 #luxembourg article {
     background-color: #E1DFDE;
 }
 #luxembourg .luxembourg-1 .bandeau {
-    background-color: #68695F;
+    background-color: #68695f;
     color: #E0DEDD;
     font-family: 'Oswald', sans-serif;
     font-size: 40px;
@@ -1462,321 +976,6 @@ background-size: cover; */
 #portfolio-details .mCSB_scrollTools {
     right: 7px;
 }
-#portfolio-details > div:first-child {
-    width: 30%;
-    height: 100%;
-    overflow: auto;
-    display: inline-block;
-    vertical-align: top;
-    cursor: pointer;
-}
-#portfolio-details > div:first-child .row {
-    border: 1px solid #1d1d1d;
-    background-color: #847053;
-    -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    width: 100%;
-    height: auto;
-    position: relative;
-    display: block !important;
-    -webkit-box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
-    box-shadow: 0 0 2px 0 rgba(0, 0, 0, 0.1);
-    z-index: 99999;
-}
-#portfolio-details > div:first-child .row > span {
-    display: block;
-    position: absolute;
-    left: 0;
-    top: 0;
-    z-index: 5;
-    width: 100%;
-    height: 100%;
-    background-color: #000;
-    opacity: 0.6;
-    -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-}
-#portfolio-details > div:first-child .row.filtered > span {
-    opacity: 0.4 !important;
-}
-#portfolio-details > div:first-child .row.on > span {
-    opacity: 0!important;
-}
-#portfolio-details > div:first-child .row.on {
-    border-bottom: 1px solid #9f8764;
-    /* border-top: 4px solid #9f8764; */
-}
-#portfolio-details > div:first-child .row.on > .col {
-    /* background-color: #847053; */
-}
-#portfolio-details > div:first-child .row.on > .col:last-child > h1 {
-    color: #fff;
-}
-#portfolio-details > div:first-child .row.on > .col > .logo-art {
-    background-size: 110%;
-}
-#portfolio-details > div:first-child .row.on > .col > .logo-art > img {
-    opacity: 0;
-}
-#portfolio-details > div:first-child .row > .col {
-    width: 49.5%;
-    display: inline-block !important;
-    position: relative;
-    -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    vertical-align: middle !important;
-}
-#portfolio-details > div:first-child .row > .col > .logo-art {
-    background-repeat: no-repeat;
-    background-position: center center;
-    background-size: 100%;
-    -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-}
-#portfolio-details > div:first-child .row > .col > .logo-art > img {
-    -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-}
-#portfolio-details > div:first-child .row.off {
-    display: none;
-}
-#portfolio-details > div:first-child .row > .col:last-child {
-    color: #e0dedd;
-    padding: 5%;
-}
-#portfolio-details > div:first-child .row > .col:last-child > .description {
-    color: #4a4a4a;
-    font-size: 13px;
-    font-size: 1.3rem;
-    line-height: 1.8rem;
-    margin-top: 10px;
-}
-#portfolio-details > div:first-child .row > .col:last-child > h1 {
-    font-family: 'Oswald', sans-serif;
-    font-size: 18px;
-    font-size: 1.8rem;
-    font-weight: 400;
-    line-height: 2.5rem;
-    margin: 0;
-    padding: 0;
-    text-align: left;
-    text-transform: uppercase;
-    -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-}
-#portfolio-details > div:last-child {
-    /* background-color: #e1dfde; */
-    display: inline-block;
-    height: 100%;
-    margin-left: -4px;
-    vertical-align: top;
-    width: 70%;
-}
-#portfolio-details > div:last-child > nav {
-    width: 100%;
-    background-color: #68695f;
-    position: relative;
-}
-#portfolio-details > div:last-child > nav > a {
-    font-family: 'Oswald', sans-serif;
-    font-size: 23px;
-    font-size: 2.3rem;
-    font-weight: 400;
-    text-decoration: none;
-    text-transform: uppercase;
-    display: inline-block;
-    padding: 1% 3%;
-    text-align: center;
-    letter-spacing: 0.1em;
-    color: #aeaeaa;
-    vertical-align: middle;
-    -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-}
-#portfolio-details > div:last-child > nav > a:hover, #portfolio-details > div:last-child > nav > a.on {
-    background-color: #1d1d1d;
-    text-align: center;
-}
-#portfolio-details > div:last-child > nav > a.close {
-    background-color: #1d1d1d;
-    padding: 0.85% 0;
-    position: absolute;
-    right: 0%;
-    text-align: center;
-    top: -14px;
-    width: 10%;
-    z-index: 99;
-}
-#portfolio-details > div:last-child > nav > a.close > img {
-    -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -webkit-transform: scale(0.9);
-    -ms-transform: scale(0.9);
-    -o-transform: scale(0.9);
-    transform: scale(0.9);
-}
-#portfolio-details > div:last-child > nav > a.close:hover > img {
-    -webkit-transform: rotate(180deg);
-    -ms-transform: rotate(180deg);
-    -o-transform: rotate(180deg);
-    transform: rotate(180deg);
-}
-#portfolio-details > div:last-child > section > .slideshow {
-    display: inline-block;
-    position: relative;
-    width: 64%;
-    margin-top: 10%;
-    vertical-align: top;
-}
-#portfolio-details > div:last-child > section {
-    visibility: hidden;
-    position: absolute;
-    width: 70.4%;
-    -webkit-transition: all 950ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -moz-transition: all 950ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -ms-transition: all 950ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -o-transition: all 950ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition: all 950ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    opacity: 0;
-}
-#portfolio-details > div:last-child > section.on {
-    visibility: visible;
-    opacity: 1;
-}
-#portfolio-details > div:last-child > section > .slideshow .slick-dots {
-    margin-bottom: -4%
-}
-#portfolio-details > div:last-child > section > .slideshow .slick-dots li.slick-active button:before {
-    color: #e1dfde;
-}
-#portfolio-details > div:last-child > section > .slideshow .slick-dots li button:before {
-    font-size: 16px;
-    /* color: #68695F; */
-    color: #E1DFDE;
-}
-#portfolio-details > div:last-child > section > article {
-    background-color: #1d1d1d;
-    color: #e1dfde;
-    display: inline-block;
-    margin: 3% 5% 0 3%;
-    padding: 6% 0 0;
-    text-align: justify;
-    vertical-align: top;
-    width: 25%;
-}
-#portfolio-details > div:last-child > section > article > h1 {
-    padding: 1.5% 0;
-    margin: 0;
-    margin-bottom: 2%;
-    font-size: 25px;
-    font-size: 2.5rem;
-    font-weight: 400;
-    text-align: left;
-    color: #9f8764;
-}
-#portfolio-details > div:last-child > section > article a {
-    color: #9f8764;
-    text-decoration: none;
-}
-#portfolio-details > div:last-child > section > article .flickr-and-cie {
-    background-color: #847053;
-    font-family: 'Oswald', sans-serif;
-    font-size: 20px;
-    font-size: 2rem;
-    font-weight: 200;
-    left: 0;
-    padding: 0.5%;
-    position: absolute;
-    text-indent: 2.5%;
-    top: 1px;
-    width: 99.4%;
-}
-#portfolio-details > div:last-child > section > article .flickr-and-cie > a {
-    color: #1D1D1D;
-    font-weight: 400;
-    padding: 0 1%;
-}
-#portfolio-details > div:last-child > section > article .flickr-and-cie > a > span {
-    font-variant: small-caps;
-}
-#portfolio-details > div:last-child > section > article .developIn {
-    display: inline-block;
-    margin: 3% 4% 2% -1%;
-    padding: 1% 0;
-}
-#portfolio-details > div:last-child > section > article .developIn > span {
-    display: inline-block;
-    background-image: url(../WD_IMAGES/_LUXEMBOURG/luxembourg-icones-html-css-jquery-etc-spreadsheets.png);
-    background-repeat: no-repeat;
-    background-position: 0 0;
-    width: 48px;
-    height: 45px;
-}
-#portfolio-details > div:last-child > section > article .developIn > span.css {
-    background-position: -48px 0
-}
-#portfolio-details > div:last-child > section > article .developIn > span.jquery {
-    background-position: -96px 0
-}
-#portfolio-details > div:last-child > section > article .developIn > span.spip {
-    background-position: -144px 0
-}
-#portfolio-details > div:last-child > section > article .developIn > span.responsive {
-    background-position: -192px 0
-}
-#portfolio-details > div:last-child > section > article .developIn > span.php {
-    background-position: -240px 0
-}
-#portfolio-details > div:last-child > section > article .visit-site {
-    display: inline-block;
-    position: relative;
-    top: -4px;
-    text-align: left;
-}
-#portfolio-details > div:last-child > section > article .visit-site, #portfolio-details > div:last-child > section > article .awards {
-    margin-top: 10px;
-    color: #767676;
-    text-align: left;
-}
-#portfolio-details > div:last-child > section > article a img {
-    -webkit-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -moz-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -ms-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    -o-transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    transition: all 450ms cubic-bezier(0.175, 0.885, 0.320, 1.275);
-    display: inline-block;
-    position: relative;
-}
-#portfolio-details > div:last-child > section > article a:hover {
-    opacity: 0.5;
-}
-#portfolio-details > div:last-child > section > article a:hover img {
-    left: 10px;
-}
 /* AWARDS */
 
 #luxembourg #awards {
@@ -1797,20 +996,25 @@ background-size: cover; */
     padding-left: 15px;
 }
 #luxembourg #awards > .titre > div:first-child {
-    font-weight: 400;
-    font-size: 70px;
-    font-size: 5rem;
+    color: #fff;
+    font-size: 50px;
+    font-weight: bold;
     color: #9f8764;
+    font-style: normal;
+    text-transform: capitalize;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 #luxembourg #awards > .titre > div:last-child {
     color: #68695F;
     font-size: 25px;
     font-size: 2.5rem;
     font-weight: 300;
-    letter-spacing: 0.6rem;
+    letter-spacing: 0.2rem;
+    font-style: normal;
+    text-transform: capitalize;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
 }
 /*BELGIQUE*/
-
 #belgique .welcomeTitle {
     width: 100%;
     position: absolute;
@@ -1827,11 +1031,17 @@ background-size: cover; */
     text-align: center;
     width: 574px;
 }
-#belgique .mainPicture {
-    background-color: #DDE0E1;
+#belgique{
+  background-image: url('../images/sponsor.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 #belgique .belgique-1 {
-    background-color: #DDE0E1;
+  background: linear-gradient(to bottom,
+ rgba(113,68,99,0.85) 0%,
+ rgba(30,22,33,0.85) 100%);
 }
 #belgique .belgique-1 > w990px {
     padding-bottom: 0;
@@ -1862,7 +1072,7 @@ background-size: cover; */
     color: #ca0a60;
 }
 #belgique .texte2 {
-    background-color: #3F8093;
+    background-color: #4d9cb3;
     margin-top: -80px;
 }
 #belgique .texte2 > .w990px.merci {

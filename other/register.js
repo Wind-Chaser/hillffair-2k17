@@ -26,7 +26,8 @@
 		city = form.city.value.trim(),
 		college = form.college.value.trim(),
 		phone = form.phone.value.trim(),
-		gender = 'other', year = -1, events = [];
+		gender = form.gender.value.trim(),
+		 year = -1, events = [];
 
 		//captcha = grecaptcha.getResponse();
 
@@ -101,7 +102,7 @@
 			document.getElementsByClassName("warningEvent")[0].className = "warningEvent";
 		}
 
-		if(gender == 'other'){
+		if(gender === form.gender.defaultVal || gender.length < 2){
 			document.getElementsByClassName("warningGender")[0].className = "warningGender visible";
 			status = false;
 		} else {
@@ -131,11 +132,11 @@
 
 			var objectToSend = {
 				"name": name,
+				"members": gender,
 				"email": email,
 				"city": city,
 				"college": college,
 				"phone": phone,
-				"gender": gender,
 				"year": year,
 				"events": events
 			};
@@ -149,26 +150,18 @@
 				if(xmlhttp.readyState == 4){
 					var res = JSON.parse(xmlhttp.responseText);
 					console.log(res);
-					document.getElementById('male').checked=false;
-					document.getElementById('female').checked=false;
-					document.getElementById('first').checked=false;
-					document.getElementById('second').checked=false;
-					document.getElementById('third').checked=false;
-					document.getElementById('forth').checked=false;
-					document.getElementById('fifth').checked=false;
-					document.getElementById('na').checked=false;
-					document.getElementById('bdance').checked=false;
-					document.getElementById('bbands').checked=false;
-					document.getElementById('nukkadn').checked=false;
-					document.getElementById('fash').checked=false;
+					if(res==500){
+					  document.getElementsByClassName("darkLayer")[0].className = "darkLayer shown";
+						document.getElementsByClassName("notice")[0].className = "notice shown";
+						document.getElementsByClassName("msgNotice")[0].innerHTML = "You cannot be Registered";
+						document.getElementsByClassName("noticeContent")[0].className = "noticeContent shown";
+					}
+					else{
 				  document.getElementsByClassName("darkLayer")[0].className = "darkLayer shown";
 					document.getElementsByClassName("notice")[0].className = "notice shown";
-					document.getElementsByClassName("msgNotice")[0].innerHTML = "You Are Now Registed";
+					document.getElementsByClassName("msgNotice")[0].innerHTML = "You Are Now Registered";
 					document.getElementsByClassName("noticeContent")[0].className = "noticeContent shown";
-					//setTimeout(function(){
-					//	window.location="/register";
-					//},400);
-					//grecaptcha.reset();
+				}
 				}
 			}
 		}
@@ -179,20 +172,11 @@
 			document.getElementsByClassName("noticeContent")[0].className = "noticeContent";
 			document.getElementsByClassName("reg")[0].disabled = false;
 			document.getElementsByClassName("reg")[0].value = "Register";
-			document.getElementById('name')[0].value="";
-			document.getElementById('phone')[0].value="";
-			document.getElementById('city')[0].value="";
-			document.getElementById('college')[0].value="";
-			document.getElementById('email')[0].value="";
-			document.getElementByName("year").value="";
-			document.getElementByName("gender").value="";
-			document.getElementByName("events").value="";
-
-
-
-
-
-		});
+			setTimeout(function(){
+				window.location="/";
+			},0);
+			grecaptcha.reset();
+			});
 
 		e.preventDefault();
 	});

@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Advent+Pro');
-@import url('https://fonts.googleapis.com/css?family=Droid+Sans');
+@import url('https://fonts.googleapis.com/css?family=Poppins');
 .main-fool {
 	background-image: url("../img/main-fool-2.png");
 	background-repeat: no-repeat;
@@ -44,9 +43,11 @@
 .rdv-head {
 	color: #000000;
 	font-size: 50px;
-	line-height:96px;
-	font-family: 'Advent Pro', sans-serif;
-	font-weight: 700;
+	line-height:86px;
+  font-family: 'Poppins', sans-serif;
+	font-weight: 400;
+	font-style: normal;
+  text-transform: capitalize;
 	text-decoration: none;
 }
 
@@ -62,10 +63,10 @@
 	}
 
 	.rdv-head {
-		color: #000000;
+		color: #001c1f;
 		font-size: 80px;
 		line-height:96px;
-		font-family: 'Advent Pro', sans-serif;
+		font-family: 'Poppins', sans-serif;
 		font-weight: 700;
 		text-decoration: none;
 	}
@@ -319,23 +320,52 @@
 	display: flex;
 	align-items: center;
 	flex-direction: column;
-	border: 2px solid black;
-		margin: auto;
+	margin: auto;
 	margin-bottom: 100px;
 	padding-bottom: 30px;
 }
 .sponsors_title {
-	font-size: 46px;
-font-weight: 800;
-font-family: 'Advent Pro', sans-serif;
+font-size: 34px;
+font-weight: 600;
+line-height: 40px;
+font-family: 'Poppins', sans-serif;
 text-align: center;
+color:#fff;
+}
+.sponsors_title2 {
+font-size: 30px;
+font-weight: 600;
+line-height: 40px;
+font-family: 'Poppins', sans-serif;
+text-align: center;
+color:#fff;
+margin-top: 16px;
+}
+.sponsor_company{
+	background-color: #fff;
+	min-width: 200px;
+	height: 150px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding:10px;
+}
+.line1{
+	width: 15%;
+	margin-top: 8px;
+	height: 1px;
+	background-color:#fff;
+}
+.line2{
+	width: 11%;
+	margin-top: 2px;
+	height: 1px;
+	background-color:#fff;
 }
 #lower_rights{
-font-family: Helvetica, sans-serif;
-font-size: 16px;
-font-weight: 400;
-line-height: 1.428571429;
-color: #fff;
+	font-size: 14px;
+	line-height: 14px;
+  color: #fff;
 }
 .sponsors_list{
 	display: flex;
