@@ -6,7 +6,7 @@ https://hillffair2k17.herokuapp.com/
 
 
 ## HomePage
-It's dashboard where details of all exams can be seen and you can seen how many exams are in progress or upcoming or completed. 
+It's homepage where details of fest, introduction of Hillffair and gallery of previous fest and sponspors details.  
 <p align="center">
 <img src="Images/hi1.png" width="80%">
 </p>
@@ -17,7 +17,7 @@ It's dashboard where details of all exams can be seen and you can seen how many 
 </p>
 
 ## Registration
-Here, you can see registration of students in evenst and they get notified about the registration.
+Here, you can see registration of students in events and they get notified about the registration.
 <p align="center">
 <img src="Images/h4.png" width="80%">
 </p>
